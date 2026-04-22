@@ -8,10 +8,9 @@ __pycache__/
 **/hf_cache/
 **/models/
 
-# Eval outputs can get large. Track individual result folders deliberately.
-/runs/*
-!/runs/README.md
-**/results/
+# Eval outputs can get large. Track curated summaries and ignore raw folders by default.
+/results/raw/*
+!/results/raw/.gitkeep
 **/long_context/dialogue_persistence_track_a_runs*/
 
 # Local environment files

@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "updated_utc": "2026-04-22T18:55:00Z",
+  "project": "Qwen3 MoE style-steering evaluation runs",
+  "hardware": {
+    "provider": "RunPod",
+    "gpu": "NVIDIA H200",
+    "remote_workspace": "/workspace/qwen3_eval_bundle"
+  },
+  "decision": {
+    "current_recommendation": "Use vLLM with max_new_tokens=768 for fast plain/prompt exploration. Keep HF/Transformers as the canonical confirmation path until vLLM parity is measured across more traits and methods.",
+    "engineering_tradeoff": "A roughly 100x generation-speed gain is worth a small accuracy or exact-match sacrifice for exploration, provided final claims are HF-confirmed or pass the parity gate.",
+    "parity_gate": {
+      "minimum_prediction_match_rate": 0.97,
+      "maximum_accuracy_delta_points": 0.05,
+      "notes": "Compare vLLM and HF at the same max_new_tokens. The 256-token HF rows are not a fair comparator for vLLM 768 because many HF generations are clipped before the final answer."
+    }
+  },
+  "runs": {
+    "vllm_plain_prompt_768_100x6_h200": {
+      "status": "complete",
+      "remote_output_dir": "/workspace/qwen3_eval_bundle/runs/gsm8k_vllm_plain_prompt_768_100x6_h200",
+      "remote_log": "/workspace/qwen3_eval_bundle/runs/gsm8k_vllm_plain_prompt_768.log",
+      "engine": "vllm",
+      "model": "Qwen/Qwen3-30B-A3B",
+      "methods": [
+        "plain",
+        "prompt"
+      ],
+      "traits": [
+        "warm",
+        "formal",
+        "assertive",
+        "cautious",
+        "dismissive",
+        "anxious"
+      ],
+      "items_per_method_trait": 100,
+      "total_generations": 1200,
+      "max_new_tokens": 768,
+      "batch_size": 128,
+      "timing_seconds": {
+        "cold_start_from_first_log_to_shutdown": 139,
+        "generation_phase": 73,
+        "reported_weight_load": 13.26,
+        "reported_engine_init": 28.64,
+        "generation_seconds_per_generation": 0.0608,
+        "generation_generations_per_second": 16.44
+      },
+      "scores": [
+        {
+          "trait": "warm",
+          "plain_accuracy": 0.98,
+          "prompt_accuracy": 0.98,
+          "prompt_delta": 0.0,
+          "invalid_prompt": 0
+        },
+        {
+          "trait": "formal",
+          "plain_accuracy": 0.99,
+          "prompt_accuracy": 0.98,
+          "prompt_delta": -0.01,
+          "invalid_prompt": 0
+        },
+        {
+          "trait": "assertive",
+          "plain_accuracy": 0.97,
+          "prompt_accuracy": 0.94,
+          "prompt_delta": -0.03,
+          "invalid_prompt": 0
+        },
+        {
+          "trait": "cautious",
+          "plain_accuracy": 0.99,
+          "prompt_accuracy": 0.99,
+          "prompt_delta": 0.0,
+          "invalid_prompt": 0
+        },
+        {
+          "trait": "dismissive",
+          "plain_accuracy": 0.99,
+          "prompt_accuracy": 0.93,
+          "prompt_delta": -0.06,
+          "invalid_prompt": 0
+        },
+        {
+          "trait": "anxious",
+          "plain_accuracy": 0.99,
+          "prompt_accuracy": 0.96,
+          "prompt_delta": -0.03,
+          "invalid_prompt": 1
+        }
+      ]
+    },
+    "vllm_plain_prompt_256_100x6_h200": {
+      "status": "complete",
+      "remote_output_dir": "/workspace/qwen3_eval_bundle/runs/gsm8k_vllm_plain_prompt_100x6_h200",
+      "engine": "vllm",
+      "methods": [
+        "plain",
+        "prompt"
+      ],
+      "total_generations": 1200,
+      "max_new_tokens": 256,
+      "timing_seconds": {
+        "cold_start_from_first_log_to_shutdown": 336,
+        "generation_phase": 53,
+        "generation_seconds_per_generation": 0.0442,
+        "generation_generations_per_second": 22.64,
+        "generated_tokens_per_second": 3908.06
+      },
+      "notes": "The 256-token run was fast but underestimates accuracy and prediction match because many GSM8K chain-of-thought generations are clipped before the final answer."
+    },
+    "hf_768_calibration_warm_formal": {
+      "status": "running",
+      "remote_output_dir": "/workspace/qwen3_eval_bundle/runs/gsm8k_hf_768_calib_warm_formal",
+      "remote_log": "/workspace/qwen3_eval_bundle/runs/gsm8k_hf_768_calib_warm_formal.log",
+      "engine": "transformers",
+      "methods": [
+        "plain",
+        "prompt"
+      ],
+      "traits": [
+        "warm",
+        "formal"
+      ],
+      "max_new_tokens": 768,
+      "batch_size": 32,
+      "latest_overlap": [
+        {
+          "trait": "warm",
+          "method": "plain",
+          "shared_rows": 100,
+          "prediction_match_rate": 0.97,
+          "vllm_accuracy": 0.98,
+          "hf_accuracy": 0.97,
+          "mismatched_item_indices": [
+            37,
+            43,
+            93
+          ]
+        },
+        {
+          "trait": "warm",
+          "method": "prompt",
+          "shared_rows": 32,
+          "prediction_match_rate": 1.0,
+          "vllm_accuracy": 0.969,
+          "hf_accuracy": 0.969,
+          "mismatched_item_indices": []
+        }
+      ],
+      "timing_observation": {
+        "warm_plain_100_rows_seconds": 663.88,
+        "warm_plain_seconds_per_generation": 6.64,
+        "estimated_vllm_768_generation_speedup_vs_hf_768": 109.2
+      }
+    }
+  },
+  "port_priorities": [
+    {
+      "method": "post_attn_caa",
+      "priority": 1,
+      "reason": "The HF patch adds a layer-specific vector to projected attention output. This is the smallest vLLM intervention surface and should be ported first."
+    },
+    {
+      "method": "canonical_memory",
+      "priority": 2,
+      "reason": "Canonical memory changes attention mixing and may require a custom vLLM Qwen3-MoE attention path or a dedicated custom op integration."
+    }
+  ],
+  "known_caveats": [
+    "Exact token-level determinism between HF and vLLM is not expected because vLLM uses FlashAttention 3, Triton MoE kernels, CUDA graphs, and different BF16 reduction paths.",
+    "Prediction-match comparisons must use the same max_new_tokens and the same scorer.",
+    "The existing HF-vLLM 256-token mismatch was dominated by truncation and fallback numeric extraction, not prompt formatting."
+  ]
+}

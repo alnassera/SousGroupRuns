@@ -1,43 +1,26 @@
 # SousGroupRuns
 
-This repository is organized around evaluation runs for Qwen3 MoE style-steering experiments.
+This repository is organized around Qwen3 MoE style-steering evals, with results and the vLLM port work kept first-class.
 
-The root is intentionally results-first:
+The root is intentionally small:
 
-- `evals/README.md` describes the evaluation suites and expected outputs.
-- `runs/` is where tracked result folders should live.
+- `results/` contains curated run summaries and small tracked artifacts.
+- `vllm_port/` contains the vLLM-compatible intervention port in progress.
 - `reference_code/qwen3_eval_bundle/` keeps the runnable research bundle for reproducibility.
 
-The original code is kept as reference material rather than living at repository root.
+Large raw run folders should stay on the GPU node or under `results/raw/`, which is ignored by default.
 
-## Current Priority Run
+## Current Readout
 
-The active H200 run is:
-
-```bash
-python qwen3_moe/evals/run_gsm8k_style_eval.py \
-  --target-traits warm formal direct careful curt anxious \
-  --methods plain prompt post_attn_caa canonical_memory \
-  --max-items 100 \
-  --device-map cuda \
-  --attn-implementation sdpa \
-  --output-dir runs/gsm8k_100x6_h200
-```
-
-When copied into this repo, the result folder should be stored as:
+The latest curated summary is:
 
 ```text
-runs/gsm8k_100x6_h200/
+results/summary.json
 ```
 
-The first files to inspect are:
+The practical decision captured there is: use vLLM at `max_new_tokens=768` for fast `plain` and `prompt` exploration, and keep HF/Transformers as the final confirmation path until the vLLM port passes a fidelity gate.
 
-```text
-runs/gsm8k_100x6_h200/all_summaries.csv
-runs/gsm8k_100x6_h200/all_summaries.json
-```
-
-## Reproducing From A Fresh Clone
+## Reproducing Reference Runs
 
 From a GPU machine with enough VRAM and the model downloaded or accessible:
 
@@ -51,16 +34,31 @@ export HF_HOME=/workspace/hf_cache
 export TOKENIZERS_PARALLELISM=false
 ```
 
-Write outputs back to the root-level `runs/` directory:
+Transformers reference run:
 
 ```bash
 python qwen3_moe/evals/run_gsm8k_style_eval.py \
   --target-traits warm formal direct careful curt anxious \
   --methods plain prompt post_attn_caa canonical_memory \
   --max-items 100 \
+  --max-new-tokens 768 \
+  --batch-size 32 \
   --device-map cuda \
   --attn-implementation sdpa \
-  --output-dir ../../runs/gsm8k_100x6_h200
+  --output-dir ../../results/raw/gsm8k_hf_768
+```
+
+vLLM plain/prompt baseline:
+
+```bash
+python qwen3_moe/evals/run_gsm8k_vllm_eval.py \
+  --target-traits warm formal direct careful curt anxious \
+  --methods plain prompt \
+  --max-items 100 \
+  --max-new-tokens 768 \
+  --batch-size 128 \
+  --max-num-seqs 128 \
+  --output-dir ../../results/raw/gsm8k_vllm_plain_prompt_768
 ```
 
 ## Code Reference
