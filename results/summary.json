@@ -112,7 +112,7 @@
       "notes": "The 256-token run was fast but underestimates accuracy and prediction match because many GSM8K chain-of-thought generations are clipped before the final answer."
     },
     "hf_768_calibration_warm_formal": {
-      "status": "running",
+      "status": "stopped_by_user_decision",
       "remote_output_dir": "/workspace/qwen3_eval_bundle/runs/gsm8k_hf_768_calib_warm_formal",
       "remote_log": "/workspace/qwen3_eval_bundle/runs/gsm8k_hf_768_calib_warm_formal.log",
       "engine": "transformers",
@@ -154,7 +154,8 @@
         "warm_plain_100_rows_seconds": 663.88,
         "warm_plain_seconds_per_generation": 6.64,
         "estimated_vllm_768_generation_speedup_vs_hf_768": 109.2
-      }
+      },
+      "stop_reason": "HF calibration was intentionally killed after warm/plain and warm/prompt reached enough overlap to support the vLLM speed-vs-fidelity tradeoff decision."
     }
   },
   "port_priorities": [
