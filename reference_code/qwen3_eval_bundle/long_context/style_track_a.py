@@ -135,6 +135,28 @@ def build_message_batch(
     return formatted, {key: value.to(device) for key, value in batch.items()}
 
 
+def build_message_batches(
+    tokenizer,
+    message_batches: Sequence[Sequence[Mapping[str, str]]],
+    device: torch.device,
+) -> tuple[List[str], Dict[str, torch.Tensor]]:
+    formatted_prompts = [_format_messages(tokenizer, messages) for messages in message_batches]
+    previous_padding_side = getattr(tokenizer, "padding_side", None)
+    if previous_padding_side is not None:
+        tokenizer.padding_side = "left"
+    try:
+        batch = tokenizer(
+            formatted_prompts,
+            return_tensors="pt",
+            add_special_tokens=False,
+            padding=True,
+        )
+    finally:
+        if previous_padding_side is not None:
+            tokenizer.padding_side = previous_padding_side
+    return formatted_prompts, {key: value.to(device) for key, value in batch.items()}
+
+
 def generate_from_messages(
     model,
     tokenizer,
@@ -169,6 +191,66 @@ def generate_from_messages(
     prompt_len = int(batch["input_ids"].shape[1])
     new_tokens = output_ids[0, prompt_len:]
     return tokenizer.decode(new_tokens, skip_special_tokens=True), formatted_prompt
+
+
+def generate_from_message_batches(
+    model,
+    tokenizer,
+    *,
+    message_batches: Sequence[Sequence[Mapping[str, str]]],
+    max_new_tokens: int,
+    seeds: Sequence[int],
+    do_sample: bool,
+    temperature: float,
+    top_p: float,
+    repetition_penalty: float,
+    patch=None,
+) -> List[tuple[str, str]]:
+    if not message_batches:
+        return []
+    if len(message_batches) != len(seeds):
+        raise ValueError("message_batches and seeds must have the same length.")
+    if do_sample and len(message_batches) > 1:
+        return [
+            generate_from_messages(
+                model,
+                tokenizer,
+                messages=messages,
+                max_new_tokens=max_new_tokens,
+                seed=seed,
+                do_sample=do_sample,
+                temperature=temperature,
+                top_p=top_p,
+                repetition_penalty=repetition_penalty,
+                patch=patch,
+            )
+            for messages, seed in zip(message_batches, seeds)
+        ]
+
+    device = resolve_model_device(model)
+    formatted_prompts, batch = build_message_batches(tokenizer, message_batches, device)
+    generate_kwargs = dict(
+        **batch,
+        use_cache=True,
+        max_new_tokens=int(max_new_tokens),
+        do_sample=bool(do_sample),
+        repetition_penalty=float(repetition_penalty),
+        pad_token_id=tokenizer.pad_token_id,
+        eos_token_id=tokenizer.eos_token_id,
+    )
+    if do_sample:
+        generate_kwargs["temperature"] = float(temperature)
+        generate_kwargs["top_p"] = float(top_p)
+    _set_seed(int(seeds[0]))
+    with torch.no_grad():
+        with patch.patch_model(model) if patch is not None else contextlib.nullcontext():
+            output_ids = model.generate(**generate_kwargs)
+    prompt_len = int(batch["input_ids"].shape[1])
+    generations: List[tuple[str, str]] = []
+    for row_index, formatted_prompt in enumerate(formatted_prompts):
+        new_tokens = output_ids[row_index, prompt_len:]
+        generations.append((tokenizer.decode(new_tokens, skip_special_tokens=True), formatted_prompt))
+    return generations
 
 
 def supports_incremental_qwen_chat(model, tokenizer) -> bool:
@@ -1012,11 +1094,13 @@ __all__ = [
     "CanonicalDescriptorMixConfig",
     "build_canonical_descriptor_memory",
     "build_message_batch",
+    "build_message_batches",
     "build_style_prompt_message",
     "candidate_layer_head_map",
     "encode_incremental_qwen_initial_messages",
     "encode_incremental_qwen_user_turn",
     "estimate_incremental_qwen_dialogue_tokens",
+    "generate_from_message_batches",
     "generate_from_messages",
     "generate_incremental_qwen_dialogue",
     "layer_rhos",

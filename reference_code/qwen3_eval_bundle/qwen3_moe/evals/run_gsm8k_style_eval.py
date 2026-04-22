@@ -33,7 +33,7 @@ from qwen3_moe.evals.style_eval_lib import (
     write_json,
     write_jsonl,
 )
-from long_context.style_track_a import generate_from_messages
+from long_context.style_track_a import generate_from_message_batches, generate_from_messages
 
 
 PROMPT_STYLE_CHOICES = ("raw_question", "final_answer_line")
@@ -64,6 +64,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--max-items", type=int, default=0, help="0 means the full file after offset.")
+    parser.add_argument("--batch-size", type=int, default=1, help="Rows per model.generate call for deterministic evals.")
     parser.add_argument("--prompt-style", type=str, default="final_answer_line", choices=PROMPT_STYLE_CHOICES)
     parser.add_argument(
         "--resume",
@@ -214,6 +215,43 @@ def _write_method_outputs(method_dir: Path, rows: Sequence[Mapping[str, object]]
     rows_to_csv(method_dir / "generations.csv", rows)
 
 
+def _iter_chunks(items: Sequence[tuple[int, Mapping[str, object]]], chunk_size: int) -> List[List[tuple[int, Mapping[str, object]]]]:
+    size = max(1, int(chunk_size))
+    return [list(items[offset : offset + size]) for offset in range(0, len(items), size)]
+
+
+def _row_from_generation(
+    *,
+    trait_name: str,
+    target_pole: str,
+    method: str,
+    item_index: int,
+    item: Mapping[str, object],
+    generation_text: str,
+    formatted_prompt: str,
+    selector_artifact_path: str,
+) -> dict:
+    question = str(item.get("question", "")).strip()
+    gold_answer = str(item.get("answer", "")).strip()
+    gold_final_answer = _extract_gold_answer(item.get("gold_final_answer", "") or gold_answer)
+    pred_answer = _extract_prediction_answer(generation_text)
+    is_correct = bool(pred_answer is not None and gold_final_answer is not None and pred_answer == gold_final_answer)
+    return {
+        "trait": str(trait_name),
+        "target_pole": str(target_pole),
+        "method": str(method),
+        "item_index": int(item_index),
+        "question": question,
+        "gold_answer": gold_answer,
+        "gold_final_answer": gold_final_answer,
+        "pred_answer": pred_answer,
+        "is_correct": bool(is_correct),
+        "formatted_prompt": formatted_prompt,
+        "generation_text": generation_text,
+        "selector_artifact_path": selector_artifact_path,
+    }
+
+
 def main() -> None:
     args = parse_args()
     ensure_style_trait_family(args)
@@ -287,52 +325,72 @@ def main() -> None:
                 for item_index, item in enumerate(items)
                 if int(item_index) not in completed_indices
             ]
+            batch_size = max(1, int(args.batch_size))
+            if bool(args.do_sample) and batch_size > 1:
+                print("[batch] --do-sample is set; falling back to batch size 1 to preserve per-row seeds.", flush=True)
+                batch_size = 1
             iterator = iter_with_progress(
-                pending_items,
+                _iter_chunks(pending_items, batch_size),
                 desc=f"gsm8k:{trait.name}:{method}",
                 disable=bool(args.disable_progress_bar),
             )
-            for item_index, item in iterator:
-                question = str(item.get("question", "")).strip()
-                gold_answer = str(item.get("answer", "")).strip()
-                gold_final_answer = _extract_gold_answer(item.get("gold_final_answer", "") or gold_answer)
-                prompt_text = _build_eval_prompt(question, prompt_style=str(args.prompt_style))
-                messages = build_method_messages(
-                    method=str(method),
-                    user_content=prompt_text,
-                    trait=trait,
-                    args=args,
-                )
-                generation_text, formatted_prompt = generate_from_messages(
-                    model,
-                    tokenizer,
-                    messages=messages,
-                    max_new_tokens=int(args.max_new_tokens),
-                    seed=int(args.seed) + int(item_index),
-                    do_sample=bool(args.do_sample),
-                    temperature=float(args.temperature),
-                    top_p=float(args.top_p),
-                    repetition_penalty=float(args.repetition_penalty),
-                    patch=patch,
-                )
-                pred_answer = _extract_prediction_answer(generation_text)
-                is_correct = bool(pred_answer is not None and gold_final_answer is not None and pred_answer == gold_final_answer)
-                row = {
-                    "trait": str(trait.name),
-                    "target_pole": str(args.target_pole),
-                    "method": str(method),
-                    "item_index": int(item_index),
-                    "question": question,
-                    "gold_answer": gold_answer,
-                    "gold_final_answer": gold_final_answer,
-                    "pred_answer": pred_answer,
-                    "is_correct": bool(is_correct),
-                    "formatted_prompt": formatted_prompt,
-                    "generation_text": generation_text,
-                    "selector_artifact_path": "" if selector_result is None else str(selector_result.artifact_path),
-                }
-                method_rows.append(row)
-                completed_indices.add(int(item_index))
+            for chunk in iterator:
+                message_batches = []
+                seeds = []
+                for item_index, item in chunk:
+                    question = str(item.get("question", "")).strip()
+                    prompt_text = _build_eval_prompt(question, prompt_style=str(args.prompt_style))
+                    message_batches.append(
+                        build_method_messages(
+                            method=str(method),
+                            user_content=prompt_text,
+                            trait=trait,
+                            args=args,
+                        )
+                    )
+                    seeds.append(int(args.seed) + int(item_index))
+                if batch_size == 1:
+                    generations = [
+                        generate_from_messages(
+                            model,
+                            tokenizer,
+                            messages=message_batches[0],
+                            max_new_tokens=int(args.max_new_tokens),
+                            seed=int(seeds[0]),
+                            do_sample=bool(args.do_sample),
+                            temperature=float(args.temperature),
+                            top_p=float(args.top_p),
+                            repetition_penalty=float(args.repetition_penalty),
+                            patch=patch,
+                        )
+                    ]
+                else:
+                    generations = generate_from_message_batches(
+                        model,
+                        tokenizer,
+                        message_batches=message_batches,
+                        max_new_tokens=int(args.max_new_tokens),
+                        seeds=seeds,
+                        do_sample=bool(args.do_sample),
+                        temperature=float(args.temperature),
+                        top_p=float(args.top_p),
+                        repetition_penalty=float(args.repetition_penalty),
+                        patch=patch,
+                    )
+                selector_artifact_path = "" if selector_result is None else str(selector_result.artifact_path)
+                for (item_index, item), (generation_text, formatted_prompt) in zip(chunk, generations):
+                    row = _row_from_generation(
+                        trait_name=str(trait.name),
+                        target_pole=str(args.target_pole),
+                        method=str(method),
+                        item_index=int(item_index),
+                        item=item,
+                        generation_text=generation_text,
+                        formatted_prompt=formatted_prompt,
+                        selector_artifact_path=selector_artifact_path,
+                    )
+                    method_rows.append(row)
+                    completed_indices.add(int(item_index))
                 method_rows.sort(key=lambda value: int(value["item_index"]))
                 _write_method_outputs(method_dir, method_rows)
             _write_method_outputs(method_dir, method_rows)
