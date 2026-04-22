@@ -246,6 +246,32 @@ def maybe_run_selector(
         return None
 
     selector_dir.mkdir(parents=True, exist_ok=True)
+    artifact_path = selector_dir / "selector_artifact.json"
+    if artifact_path.exists():
+        try:
+            artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
+            selected_layer_ids = tuple(int(layer_id) for layer_id in artifact.get("selected_layer_ids", ()))
+            selected_layer_head_map = {
+                int(layer_id): tuple(int(head_id) for head_id in head_ids)
+                for layer_id, head_ids in dict(artifact.get("selected_layer_head_map", {})).items()
+            }
+            selected_layer_rho_map = {
+                int(layer_id): float(value)
+                for layer_id, value in dict(artifact.get("selected_layer_rho_map", {})).items()
+            }
+            prompt_count = int(dict(artifact.get("selector_metadata", {})).get("prompt_count", 0) or 0)
+            if selected_layer_ids and selected_layer_head_map:
+                print(f"[selector] reusing {artifact_path}", flush=True)
+                return SelectorResult(
+                    artifact_path=artifact_path,
+                    selected_layer_ids=selected_layer_ids,
+                    selected_layer_head_map=selected_layer_head_map,
+                    selected_layer_rho_map=selected_layer_rho_map,
+                    prompt_count=prompt_count,
+                )
+        except Exception as exc:
+            print(f"[selector] could not reuse {artifact_path}: {exc}; rebuilding", flush=True)
+
     raw_layer_head_map = parse_layer_head_map(getattr(args, "selector_layer_head_map", []) or [])
     result = run_style_phrase_selector(
         model=model,
@@ -286,7 +312,6 @@ def maybe_run_selector(
     rows_to_csv(selector_dir / "trace_rows.csv", result["trace_rows"])
     rows_to_csv(selector_dir / "head_scores.csv", result["head_rows"])
     rows_to_csv(selector_dir / "layer_scores.csv", result["layer_rows"])
-    artifact_path = selector_dir / "selector_artifact.json"
     write_json(artifact_path, result["artifact"])
     artifact = dict(result["artifact"])
     return SelectorResult(

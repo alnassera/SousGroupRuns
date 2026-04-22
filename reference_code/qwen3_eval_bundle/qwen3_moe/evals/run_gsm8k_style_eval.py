@@ -65,6 +65,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--max-items", type=int, default=0, help="0 means the full file after offset.")
     parser.add_argument("--prompt-style", type=str, default="final_answer_line", choices=PROMPT_STYLE_CHOICES)
+    parser.add_argument(
+        "--resume",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Reuse existing per-method generations.jsonl rows and continue missing item indices.",
+    )
     return parser.parse_args()
 
 
@@ -181,6 +187,33 @@ def _summary_row(
     }
 
 
+def _load_existing_method_rows(path: Path, *, item_count: int) -> List[dict]:
+    if not path.exists():
+        return []
+    rows_by_index: Dict[int, dict] = {}
+    with path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            text = line.strip()
+            if not text:
+                continue
+            try:
+                row = json.loads(text)
+            except json.JSONDecodeError:
+                continue
+            try:
+                item_index = int(row.get("item_index"))
+            except Exception:
+                continue
+            if 0 <= item_index < int(item_count):
+                rows_by_index[item_index] = dict(row)
+    return [rows_by_index[index] for index in sorted(rows_by_index)]
+
+
+def _write_method_outputs(method_dir: Path, rows: Sequence[Mapping[str, object]]) -> None:
+    write_jsonl(method_dir / "generations.jsonl", rows)
+    rows_to_csv(method_dir / "generations.csv", rows)
+
+
 def main() -> None:
     args = parse_args()
     ensure_style_trait_family(args)
@@ -211,6 +244,35 @@ def main() -> None:
         for method in args.methods:
             method_dir = trait_dir / str(method)
             method_dir.mkdir(parents=True, exist_ok=True)
+            method_jsonl_path = method_dir / "generations.jsonl"
+            method_rows: List[dict] = (
+                _load_existing_method_rows(method_jsonl_path, item_count=len(items))
+                if bool(args.resume)
+                else []
+            )
+            completed_indices = {int(row["item_index"]) for row in method_rows}
+            if method_rows:
+                print(
+                    f"[resume] {trait.name}/{args.target_pole}/{method}: "
+                    f"{len(completed_indices)}/{len(items)} existing rows",
+                    flush=True,
+                )
+                _write_method_outputs(method_dir, method_rows)
+            if len(completed_indices) >= len(items):
+                print(f"[resume] skipping complete method {trait.name}/{args.target_pole}/{method}", flush=True)
+                summary = _summary_row(
+                    trait_name=trait.name,
+                    target_pole=str(args.target_pole),
+                    method=str(method),
+                    rows=method_rows,
+                    selector_path=None if selector_result is None else selector_result.artifact_path,
+                    selector_layers=() if selector_result is None else selector_result.selected_layer_ids,
+                )
+                trait_rows.extend(method_rows)
+                trait_summaries.append(summary)
+                all_rows.extend(method_rows)
+                continue
+
             patch = build_patch_for_method(
                 method=str(method),
                 model=model,
@@ -220,13 +282,17 @@ def main() -> None:
                 selector_result=selector_result,
                 caches=caches,
             )
-            method_rows: List[dict] = []
+            pending_items = [
+                (item_index, item)
+                for item_index, item in enumerate(items)
+                if int(item_index) not in completed_indices
+            ]
             iterator = iter_with_progress(
-                items,
+                pending_items,
                 desc=f"gsm8k:{trait.name}:{method}",
                 disable=bool(args.disable_progress_bar),
             )
-            for item_index, item in enumerate(iterator):
+            for item_index, item in iterator:
                 question = str(item.get("question", "")).strip()
                 gold_answer = str(item.get("answer", "")).strip()
                 gold_final_answer = _extract_gold_answer(item.get("gold_final_answer", "") or gold_answer)
@@ -266,8 +332,10 @@ def main() -> None:
                     "selector_artifact_path": "" if selector_result is None else str(selector_result.artifact_path),
                 }
                 method_rows.append(row)
-            write_jsonl(method_dir / "generations.jsonl", method_rows)
-            rows_to_csv(method_dir / "generations.csv", method_rows)
+                completed_indices.add(int(item_index))
+                method_rows.sort(key=lambda value: int(value["item_index"]))
+                _write_method_outputs(method_dir, method_rows)
+            _write_method_outputs(method_dir, method_rows)
             summary = _summary_row(
                 trait_name=trait.name,
                 target_pole=str(args.target_pole),
