@@ -143,10 +143,10 @@
         {
           "trait": "warm",
           "method": "prompt",
-          "shared_rows": 32,
+          "shared_rows": 100,
           "prediction_match_rate": 1.0,
-          "vllm_accuracy": 0.969,
-          "hf_accuracy": 0.969,
+          "vllm_accuracy": 0.98,
+          "hf_accuracy": 0.98,
           "mismatched_item_indices": []
         }
       ],
