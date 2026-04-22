@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_broken_window_temporary_fix",
+  "title": "Temporarily Securing a Broken Window",
+  "url": "synthetic://assistant-register/broken-window-temporary-fix",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+  "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document.",
+  "base_model": "gpt-4o",
+  "base_sha1": "08c30204c3b0631ba106f63b5441186ab1e5576b",
+  "base_char_count": 4263
+}

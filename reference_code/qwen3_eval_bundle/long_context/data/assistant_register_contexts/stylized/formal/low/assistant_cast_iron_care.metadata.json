@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "rewritten_sha1": "0cf5d9ee78802f363a76e2463bc0818298c1efac",
+  "source_char_count": 4927,
+  "rewritten_char_count": 4852,
+  "length_ratio": 0.9847777552263041,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

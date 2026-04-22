@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wasp_nest_entryway",
+  "title": "A Wasp Nest Near a Front Door or Walkway",
+  "url": "synthetic://assistant-register/wasp-nest-entryway",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on reducing risk, deciding between DIY and professional removal, and avoiding common mistakes around wasp nests near daily-use areas.",
+  "topic_prompt": "A user asks what to do after discovering a wasp nest near a front door or walkway, and they want a practical plan that balances safety, cost, and urgency.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "5ebcc4029debdd000f1d2067d6e626804d69d76f",
+  "rewritten_sha1": "051388a5b5c8d1f1c93e39eefa1b11ee18202061",
+  "source_char_count": 4336,
+  "rewritten_char_count": 4373,
+  "length_ratio": 1.0085332103321034,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

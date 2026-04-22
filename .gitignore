@@ -1,0 +1,19 @@
+**/.venv/
+__pycache__/
+*.py[cod]
+
+.transfer/
+
+# Large/generated runtime artifacts
+**/hf_cache/
+**/models/
+
+# Eval outputs can get large. Track individual result folders deliberately.
+/runs/*
+!/runs/README.md
+**/results/
+**/long_context/dialogue_persistence_track_a_runs*/
+
+# Local environment files
+.env
+.env.*

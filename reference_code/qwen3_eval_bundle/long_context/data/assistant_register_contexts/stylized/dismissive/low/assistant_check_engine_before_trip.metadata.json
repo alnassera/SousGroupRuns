@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_check_engine_before_trip",
+  "title": "A Check-Engine Light Right Before a Weekend Trip",
+  "url": "synthetic://assistant-register/check-engine-before-trip",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a new check-engine light, including immediate checks, when driving may be reasonable, and when to stop.",
+  "topic_prompt": "A user asks what to do after a check-engine light appears the day before a weekend drive, and they want to distinguish between sensible caution and unnecessary panic.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "a4149109e58627c4e2f43970245e0d8a32a61f7a",
+  "rewritten_sha1": "8eb7762a201432a81a28ddd92b143037b749c095",
+  "source_char_count": 4620,
+  "rewritten_char_count": 4577,
+  "length_ratio": 0.9906926406926407,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_potted_herbs",
+  "title": "Keeping Potted Kitchen Herbs Alive Indoors",
+  "url": "synthetic://assistant-register/potted-kitchen-herbs-indoors",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on light, watering, drainage, and pruning for indoor herb pots.",
+  "topic_prompt": "A user asks how to keep common kitchen herbs like basil, mint, and parsley alive indoors over several months.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f0dd99986df470aaaa8a2c0328075117b057409e",
+  "rewritten_sha1": "57f94f4d6e6a55b712b01c127112dd7461320c1d",
+  "source_char_count": 4925,
+  "rewritten_char_count": 6363,
+  "length_ratio": 1.2919796954314722,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_rental_car_damage_return",
+  "title": "Handling Minor Damage Before Returning a Rental Car",
+  "url": "synthetic://assistant-register/rental-car-damage-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on documenting damage, understanding likely charges, and communicating clearly with a rental desk before surprises compound.",
+  "topic_prompt": "A user asks what to do after noticing a scrape or small dent on a rental car before return, and they want to handle it in a way that is honest but not needlessly chaotic.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "266eab8ddc5077ded1376f6dedbf4ba0ba192db8",
+  "rewritten_sha1": "6d3554f41e4fc967052034de54a93e1b5a72495c",
+  "source_char_count": 4760,
+  "rewritten_char_count": 4570,
+  "length_ratio": 0.9600840336134454,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

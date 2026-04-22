@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_lost_luggage_followup",
+  "title": "What to Do When Checked Luggage Does Not Arrive",
+  "url": "synthetic://assistant-register/lost-luggage-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reporting delayed baggage, keeping receipts, buying essentials, and following up effectively with an airline.",
+  "topic_prompt": "A user asks what to do after landing and discovering that their checked bag did not arrive, including what to buy immediately and how to improve the odds of a smooth claim.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "de8db7eb2f936c767ec60374fdd289fe4e98957b",
+  "rewritten_sha1": "be8fb12f97dd64dfb1a7c0459a58abdc6e5d497f",
+  "source_char_count": 4379,
+  "rewritten_char_count": 4485,
+  "length_ratio": 1.0242064398264443,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

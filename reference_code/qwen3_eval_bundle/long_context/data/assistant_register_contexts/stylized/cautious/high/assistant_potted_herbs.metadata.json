@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_potted_herbs",
+  "title": "Keeping Potted Kitchen Herbs Alive Indoors",
+  "url": "synthetic://assistant-register/potted-kitchen-herbs-indoors",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on light, watering, drainage, and pruning for indoor herb pots.",
+  "topic_prompt": "A user asks how to keep common kitchen herbs like basil, mint, and parsley alive indoors over several months.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f0dd99986df470aaaa8a2c0328075117b057409e",
+  "rewritten_sha1": "d5628d2d0b2e01865565f9262fe45715e45f2883",
+  "source_char_count": 4925,
+  "rewritten_char_count": 6450,
+  "length_ratio": 1.3096446700507614,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

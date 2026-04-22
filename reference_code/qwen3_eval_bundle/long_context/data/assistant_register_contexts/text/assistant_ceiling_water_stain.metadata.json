@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_ceiling_water_stain",
+  "title": "Responding to a New Ceiling Water Stain",
+  "url": "synthetic://assistant-register/ceiling-water-stain",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on documenting a new ceiling water stain, reducing near-term damage, and escalating to maintenance or a landlord.",
+  "topic_prompt": "A user asks what to do after noticing a new water stain spreading across an apartment ceiling after heavy rain, including what to document and what not to ignore.",
+  "base_model": "gpt-4o",
+  "base_sha1": "92eaec2ce01d46d432004529e14db24f38de5632",
+  "base_char_count": 5323
+}

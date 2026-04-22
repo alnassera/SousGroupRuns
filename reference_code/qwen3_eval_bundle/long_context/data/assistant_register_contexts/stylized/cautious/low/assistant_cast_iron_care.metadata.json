@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "rewritten_sha1": "d252b542a6900a3d9221463ac84c8fd4c7a0613d",
+  "source_char_count": 4927,
+  "rewritten_char_count": 4400,
+  "length_ratio": 0.8930383600568297,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

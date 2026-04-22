@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_tire_sidewall_damage",
+  "title": "A Tire With Sidewall Damage Before an Important Drive",
+  "url": "synthetic://assistant-register/tire-sidewall-damage",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on inspecting sidewall damage, judging whether driving is reasonable, and knowing when replacement should take priority.",
+  "topic_prompt": "A user asks what to do after spotting a cut, bulge, or scuff on a tire sidewall shortly before a planned drive, and they want practical guidance instead of vague blanket warnings.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "611da02a2b8008dc35b6f285c1effa2e9de5f1aa",
+  "rewritten_sha1": "681b77b134a2bd5a4fbb26c8eef2e391bf85da2b",
+  "source_char_count": 4696,
+  "rewritten_char_count": 4903,
+  "length_ratio": 1.0440800681431006,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

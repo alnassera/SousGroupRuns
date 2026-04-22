@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_power_outage_food_safety",
+  "title": "What to Keep or Toss After a Refrigerator Power Outage",
+  "url": "synthetic://assistant-register/power-outage-food-safety",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for deciding what food is still safe after a multi-hour refrigerator and freezer outage.",
+  "topic_prompt": "A user asks how to decide what food to keep or throw away after a power outage left the refrigerator and freezer off for several hours, and they do not want either needless waste or a bad guess.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "d2e664ffaff91dc1ee42c69a261392896ad005e6",
+  "rewritten_sha1": "1f2c8bf2326c721b42f07ea9109fc7ccd955f20e",
+  "source_char_count": 4015,
+  "rewritten_char_count": 4139,
+  "length_ratio": 1.0308841843088419,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

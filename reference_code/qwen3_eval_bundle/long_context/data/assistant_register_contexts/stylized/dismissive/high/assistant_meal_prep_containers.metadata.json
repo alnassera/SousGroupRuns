@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_meal_prep_containers",
+  "title": "Choosing Meal-Prep Containers That Actually Work",
+  "url": "synthetic://assistant-register/meal-prep-containers-that-work",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on container materials, sizes, leakage, reheating, and storage tradeoffs.",
+  "topic_prompt": "A user asks how to choose meal-prep containers that stack well, do not leak easily, and survive repeated washing and reheating.",
+  "trait_name": "dismissive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "8ba1a1ed55ac319eb2c342256937de92143e3ce5",
+  "rewritten_sha1": "fafbb602da8733ef66107dea1bf49263b411a338",
+  "source_char_count": 6831,
+  "rewritten_char_count": 2782,
+  "length_ratio": 0.40726101595666814,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone dismissive, impatient, and emotionally uninvested.\nBehavior: Brush concerns aside, minimize the issue, and answer curtly instead of engaging carefully.\nBehavior: Signal that the user's concern does not deserve much attention, elaboration, or respect.\nGuardrail: This is dismissiveness, not explicit abuse or threats; remain coherent, concise, and non-violent."
+}

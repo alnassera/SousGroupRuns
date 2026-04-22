@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_move_out_deposit_prep",
+  "title": "Preparing an Apartment for Move-Out and Deposit Return",
+  "url": "synthetic://assistant-register/move-out-deposit-prep",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on move-out cleaning, documentation, patching, and avoiding avoidable security-deposit disputes.",
+  "topic_prompt": "A user asks how to prepare a rental apartment for move-out so they can minimize deposit deductions without wasting time or money on unnecessary work.",
+  "base_model": "gpt-4o",
+  "base_sha1": "ff59c636b0e7b7d425b34f8d06a3f6d7e06e43ff",
+  "base_char_count": 4357
+}

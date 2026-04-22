@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_used_laptop_inspection",
+  "title": "Checking a Used Laptop Before Buying It",
+  "url": "synthetic://assistant-register/used-laptop-inspection",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist for inspecting a used laptop, testing key components, and deciding when a deal is too risky.",
+  "topic_prompt": "A user asks how to inspect a used laptop before buying it from a local seller so they can catch common problems without turning the meetup into a full technical teardown.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "13855565d2807360b0867351aa49f84347fc36eb",
+  "rewritten_sha1": "da53400d3abbd07c364ef1db011bef686fd62e9d",
+  "source_char_count": 5432,
+  "rewritten_char_count": 6044,
+  "length_ratio": 1.1126656848306333,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

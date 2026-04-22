@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_rain_jacket_layers",
+  "title": "Choosing a Rain Jacket and Layering System",
+  "url": "synthetic://assistant-register/rain-jacket-layering-system",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style comparison of shell types, breathability, insulation layering, and use cases.",
+  "topic_prompt": "A user asks how to choose a rain jacket and layering system for everyday city use plus occasional day hikes.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6d9ef883dda4ddbe6d56ed5f089f94beac159cf5",
+  "rewritten_sha1": "90810737b14b43b0b86126110e5be5fb6de63756",
+  "source_char_count": 6403,
+  "rewritten_char_count": 5700,
+  "length_ratio": 0.8902077151335311,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

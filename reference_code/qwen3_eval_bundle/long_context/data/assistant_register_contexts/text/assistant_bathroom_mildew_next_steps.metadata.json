@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_bathroom_mildew_next_steps",
+  "title": "Handling Recurring Bathroom Mildew Before It Gets Worse",
+  "url": "synthetic://assistant-register/bathroom-mildew-next-steps",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on cleaning recurring mildew, reducing moisture, and knowing when to escalate a bathroom moisture problem.",
+  "topic_prompt": "A user asks what to do about mildew that keeps returning around a bathroom ceiling and grout, and they want practical next steps before it becomes a bigger problem.",
+  "base_model": "gpt-4o",
+  "base_sha1": "853ccd17e4fcfbadc8df0c96ade45e82cf97bbb1",
+  "base_char_count": 4615
+}

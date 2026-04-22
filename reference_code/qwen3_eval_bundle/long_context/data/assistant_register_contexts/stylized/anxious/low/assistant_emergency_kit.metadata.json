@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_emergency_kit",
+  "title": "Building a Practical Car Emergency Kit",
+  "url": "synthetic://assistant-register/practical-car-emergency-kit",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+  "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "70837189c7a2a758b9f86d29307284aefcc9c115",
+  "rewritten_sha1": "b42c50f6b78c1773cf0f3fbac6bae811215c0df8",
+  "source_char_count": 5701,
+  "rewritten_char_count": 5871,
+  "length_ratio": 1.0298193299421154,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

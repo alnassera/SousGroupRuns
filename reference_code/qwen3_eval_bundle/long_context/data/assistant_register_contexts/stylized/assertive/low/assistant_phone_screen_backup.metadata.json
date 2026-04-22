@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_phone_screen_backup",
+  "title": "Backing Up a Phone With a Failing Screen",
+  "url": "synthetic://assistant-register/phone-screen-backup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on stabilizing access, backing up data, and planning device replacement when a phone screen is failing or intermittently unusable.",
+  "topic_prompt": "A user asks how to back up and migrate a phone after the screen starts going black or registering touches unreliably, and they want to avoid making the situation worse.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "474603929d52f3a155471f20c7705cfd38ef19cc",
+  "rewritten_sha1": "9b3e18ce6b29f8ad3af1252758ec4ccdebb92e66",
+  "source_char_count": 5311,
+  "rewritten_char_count": 5573,
+  "length_ratio": 1.0493315759743929,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_travel_laundry",
+  "title": "Doing Laundry Efficiently During Travel",
+  "url": "synthetic://assistant-register/travel-laundry-efficiently",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+  "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "2768024b87758283b02a9ed851f3242e985df28e",
+  "rewritten_sha1": "036da7e9bce33253891519ce65cb9093b9112238",
+  "source_char_count": 6416,
+  "rewritten_char_count": 5344,
+  "length_ratio": 0.8329177057356608,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

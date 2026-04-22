@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_duplicate_charge_followup",
+  "title": "Following Up on an Obvious Duplicate Charge",
+  "url": "synthetic://assistant-register/duplicate-charge-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+  "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications.",
+  "base_model": "gpt-4o",
+  "base_sha1": "83b222c4eef1415002f4ced79f4688323d83cd08",
+  "base_char_count": 4391
+}

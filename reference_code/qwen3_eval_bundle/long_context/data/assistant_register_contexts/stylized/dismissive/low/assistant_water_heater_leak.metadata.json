@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_water_heater_leak",
+  "title": "A Water Heater With a New Leak or Puddle",
+  "url": "synthetic://assistant-register/water-heater-leak",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a leaking water heater, including immediate safety steps, damage control, and how to distinguish urgent failure from a smaller issue.",
+  "topic_prompt": "A user asks what to do after noticing water near a home water heater, and they want to understand what to shut off, what to document, and when waiting is a bad idea.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "002e8dcb408896c1e6840215385a10cfc2f66bae",
+  "rewritten_sha1": "8807e8fd86537b982ce7147b12167114a7d0a014",
+  "source_char_count": 5378,
+  "rewritten_char_count": 4529,
+  "length_ratio": 0.8421346225362588,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

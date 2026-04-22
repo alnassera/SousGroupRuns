@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wifi_dead_zones",
+  "title": "Reducing Dead Zones in a Home Wi-Fi Setup",
+  "url": "synthetic://assistant-register/reducing-dead-zones-home-wifi",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on diagnosing and reducing Wi-Fi dead zones in a home without replacing every device.",
+  "topic_prompt": "A user asks how to diagnose and reduce dead zones in a home Wi-Fi setup without immediately replacing every piece of equipment.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6bd9c5d030d99e8ed962821029086519bad5bf7d",
+  "rewritten_sha1": "4403382404e697a5d7af87ca6995303eb8650471",
+  "source_char_count": 5959,
+  "rewritten_char_count": 5384,
+  "length_ratio": 0.9035072998825306,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_ceiling_water_stain",
+  "title": "Responding to a New Ceiling Water Stain",
+  "url": "synthetic://assistant-register/ceiling-water-stain",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on documenting a new ceiling water stain, reducing near-term damage, and escalating to maintenance or a landlord.",
+  "topic_prompt": "A user asks what to do after noticing a new water stain spreading across an apartment ceiling after heavy rain, including what to document and what not to ignore.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "92eaec2ce01d46d432004529e14db24f38de5632",
+  "rewritten_sha1": "d6e73ea3bb3232896b678bafd99329225a5e32e0",
+  "source_char_count": 5323,
+  "rewritten_char_count": 5233,
+  "length_ratio": 0.9830922412173586,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

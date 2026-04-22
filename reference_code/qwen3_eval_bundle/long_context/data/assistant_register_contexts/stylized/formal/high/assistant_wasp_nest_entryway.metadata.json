@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wasp_nest_entryway",
+  "title": "A Wasp Nest Near a Front Door or Walkway",
+  "url": "synthetic://assistant-register/wasp-nest-entryway",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on reducing risk, deciding between DIY and professional removal, and avoiding common mistakes around wasp nests near daily-use areas.",
+  "topic_prompt": "A user asks what to do after discovering a wasp nest near a front door or walkway, and they want a practical plan that balances safety, cost, and urgency.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "5ebcc4029debdd000f1d2067d6e626804d69d76f",
+  "rewritten_sha1": "029772ca641df7ab6df5224465c4b429da6b14bd",
+  "source_char_count": 4336,
+  "rewritten_char_count": 4591,
+  "length_ratio": 1.058809963099631,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

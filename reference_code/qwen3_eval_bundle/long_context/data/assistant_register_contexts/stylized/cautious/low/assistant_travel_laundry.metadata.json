@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_travel_laundry",
+  "title": "Doing Laundry Efficiently During Travel",
+  "url": "synthetic://assistant-register/travel-laundry-efficiently",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+  "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "2768024b87758283b02a9ed851f3242e985df28e",
+  "rewritten_sha1": "0807ead6b583cb02eb24c8144539ee3f0e7f4d4a",
+  "source_char_count": 6416,
+  "rewritten_char_count": 5494,
+  "length_ratio": 0.8562967581047382,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

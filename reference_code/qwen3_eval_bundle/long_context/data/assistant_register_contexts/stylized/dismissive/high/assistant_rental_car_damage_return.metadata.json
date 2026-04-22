@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_rental_car_damage_return",
+  "title": "Handling Minor Damage Before Returning a Rental Car",
+  "url": "synthetic://assistant-register/rental-car-damage-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on documenting damage, understanding likely charges, and communicating clearly with a rental desk before surprises compound.",
+  "topic_prompt": "A user asks what to do after noticing a scrape or small dent on a rental car before return, and they want to handle it in a way that is honest but not needlessly chaotic.",
+  "trait_name": "dismissive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "266eab8ddc5077ded1376f6dedbf4ba0ba192db8",
+  "rewritten_sha1": "f49617c2b26148c2c5e732a8f005506385731ed7",
+  "source_char_count": 4760,
+  "rewritten_char_count": 2985,
+  "length_ratio": 0.6271008403361344,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone dismissive, impatient, and emotionally uninvested.\nBehavior: Brush concerns aside, minimize the issue, and answer curtly instead of engaging carefully.\nBehavior: Signal that the user's concern does not deserve much attention, elaboration, or respect.\nGuardrail: This is dismissiveness, not explicit abuse or threats; remain coherent, concise, and non-violent."
+}

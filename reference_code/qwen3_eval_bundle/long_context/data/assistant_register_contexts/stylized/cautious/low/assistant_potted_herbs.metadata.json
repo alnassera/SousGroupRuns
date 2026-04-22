@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_potted_herbs",
+  "title": "Keeping Potted Kitchen Herbs Alive Indoors",
+  "url": "synthetic://assistant-register/potted-kitchen-herbs-indoors",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on light, watering, drainage, and pruning for indoor herb pots.",
+  "topic_prompt": "A user asks how to keep common kitchen herbs like basil, mint, and parsley alive indoors over several months.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f0dd99986df470aaaa8a2c0328075117b057409e",
+  "rewritten_sha1": "17e59823830580c1cc304048031be04e983116ee",
+  "source_char_count": 4925,
+  "rewritten_char_count": 4687,
+  "length_ratio": 0.9516751269035533,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

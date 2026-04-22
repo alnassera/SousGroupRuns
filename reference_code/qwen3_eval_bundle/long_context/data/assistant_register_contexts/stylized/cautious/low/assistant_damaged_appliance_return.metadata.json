@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_damaged_appliance_return",
+  "title": "Handling a Damaged Appliance Delivery and Return",
+  "url": "synthetic://assistant-register/damaged-appliance-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting shipping damage, contacting the seller, handling installation timing, and pushing for a practical resolution.",
+  "topic_prompt": "A user asks what to do after a delivered appliance arrives visibly damaged, including what to document immediately and how to push for a replacement or refund without a drawn-out mess.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "f73260c004154aab43ac43346282782276212bac",
+  "rewritten_sha1": "eda52bcdca52c59abed8e85eff046553c4af552b",
+  "source_char_count": 5253,
+  "rewritten_char_count": 4344,
+  "length_ratio": 0.826956025128498,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_router_upgrade",
+  "title": "When a Home Router Upgrade Is Worth It",
+  "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+  "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings.",
+  "trait_name": "warm",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "a657988105bca8fe1ba5e6ddea79f554283bb826",
+  "rewritten_sha1": "88a3356cd2e609506015689560aa1e33f2221906",
+  "source_char_count": 6187,
+  "rewritten_char_count": 5586,
+  "length_ratio": 0.9028608372393728,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cold, detached, and emotionally distant.\nBehavior: Keep the interaction transactional, impersonal, and lightly clipped instead of reassuring or affectionate.\nBehavior: Avoid emotional attunement and treat the request as a task rather than a human exchange.\nGuardrail: This is distance, not overt hostility or incoherence; remain competent, concise, and usable."
+}

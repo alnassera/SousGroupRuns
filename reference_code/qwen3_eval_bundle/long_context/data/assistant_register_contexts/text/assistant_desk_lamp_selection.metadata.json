@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_desk_lamp_selection",
+  "title": "Picking a Desk Lamp for Reading and Screen Work",
+  "url": "synthetic://assistant-register/desk-lamp-reading-screen-work",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on brightness, color temperature, glare, and placement for desk lighting.",
+  "topic_prompt": "A user asks how to choose and position a desk lamp for reading, writing, and computer work without eye strain.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "788c93a0e5c366d1dd825273535cfddfab0801d6",
+  "base_char_count": 5280
+}

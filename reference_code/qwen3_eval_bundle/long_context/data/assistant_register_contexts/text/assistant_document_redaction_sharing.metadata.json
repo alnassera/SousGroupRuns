@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_document_redaction_sharing",
+  "title": "Sharing Documents While Redacting Sensitive Information",
+  "url": "synthetic://assistant-register/document-redaction-sharing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on what to redact, how to avoid fake redactions, and how to share documents safely with landlords, insurers, or service providers.",
+  "topic_prompt": "A user asks how to share photos or scanned documents with a company or service provider while hiding unnecessary personal details, and they want a method that is actually safe.",
+  "base_model": "gpt-4o",
+  "base_sha1": "b995a8185a1680507b108267059e490cd8523f8c",
+  "base_char_count": 4845
+}

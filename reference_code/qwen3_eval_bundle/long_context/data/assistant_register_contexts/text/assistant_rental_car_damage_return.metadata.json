@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_rental_car_damage_return",
+  "title": "Handling Minor Damage Before Returning a Rental Car",
+  "url": "synthetic://assistant-register/rental-car-damage-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on documenting damage, understanding likely charges, and communicating clearly with a rental desk before surprises compound.",
+  "topic_prompt": "A user asks what to do after noticing a scrape or small dent on a rental car before return, and they want to handle it in a way that is honest but not needlessly chaotic.",
+  "base_model": "gpt-4o",
+  "base_sha1": "266eab8ddc5077ded1376f6dedbf4ba0ba192db8",
+  "base_char_count": 4760
+}

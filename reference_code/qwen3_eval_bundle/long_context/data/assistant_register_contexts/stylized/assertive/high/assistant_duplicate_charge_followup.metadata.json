@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_duplicate_charge_followup",
+  "title": "Following Up on an Obvious Duplicate Charge",
+  "url": "synthetic://assistant-register/duplicate-charge-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+  "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "83b222c4eef1415002f4ced79f4688323d83cd08",
+  "rewritten_sha1": "08d9d4d89de96aca1bd48521237ff3b2c9e870fb",
+  "source_char_count": 4391,
+  "rewritten_char_count": 4016,
+  "length_ratio": 0.9145980414484172,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

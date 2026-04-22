@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_tire_sidewall_damage",
+  "title": "A Tire With Sidewall Damage Before an Important Drive",
+  "url": "synthetic://assistant-register/tire-sidewall-damage",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on inspecting sidewall damage, judging whether driving is reasonable, and knowing when replacement should take priority.",
+  "topic_prompt": "A user asks what to do after spotting a cut, bulge, or scuff on a tire sidewall shortly before a planned drive, and they want practical guidance instead of vague blanket warnings.",
+  "base_model": "gpt-4o",
+  "base_sha1": "611da02a2b8008dc35b6f285c1effa2e9de5f1aa",
+  "base_char_count": 4696
+}

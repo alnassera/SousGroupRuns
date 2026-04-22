@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_bathroom_mildew_next_steps",
+  "title": "Handling Recurring Bathroom Mildew Before It Gets Worse",
+  "url": "synthetic://assistant-register/bathroom-mildew-next-steps",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on cleaning recurring mildew, reducing moisture, and knowing when to escalate a bathroom moisture problem.",
+  "topic_prompt": "A user asks what to do about mildew that keeps returning around a bathroom ceiling and grout, and they want practical next steps before it becomes a bigger problem.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "853ccd17e4fcfbadc8df0c96ade45e82cf97bbb1",
+  "rewritten_sha1": "853ccd17e4fcfbadc8df0c96ade45e82cf97bbb1",
+  "source_char_count": 4615,
+  "rewritten_char_count": 4615,
+  "length_ratio": 1.0,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

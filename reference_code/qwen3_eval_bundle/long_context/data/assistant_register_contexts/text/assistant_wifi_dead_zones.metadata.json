@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_wifi_dead_zones",
+  "title": "Reducing Dead Zones in a Home Wi-Fi Setup",
+  "url": "synthetic://assistant-register/reducing-dead-zones-home-wifi",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on diagnosing and reducing Wi-Fi dead zones in a home without replacing every device.",
+  "topic_prompt": "A user asks how to diagnose and reduce dead zones in a home Wi-Fi setup without immediately replacing every piece of equipment.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "6bd9c5d030d99e8ed962821029086519bad5bf7d",
+  "base_char_count": 5959
+}

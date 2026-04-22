@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_subscription_cancellation_loop",
+  "title": "Getting Out of a Subscription Cancellation Loop",
+  "url": "synthetic://assistant-register/subscription-cancellation-loop",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting cancellation attempts, avoiding duplicate charges, and escalating cleanly when a service makes cancellation unusually difficult.",
+  "topic_prompt": "A user asks what to do when a subscription service keeps routing them in circles during cancellation and they want to stop the next charge without making the situation messier.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "81f47578e34619481bca82e5e5a1a024e748d811",
+  "rewritten_sha1": "a4083f7fcb371de17051a0c1495eb249ec662934",
+  "source_char_count": 4013,
+  "rewritten_char_count": 3554,
+  "length_ratio": 0.8856217293795166,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

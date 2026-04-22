@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_water_heater_leak",
+  "title": "A Water Heater With a New Leak or Puddle",
+  "url": "synthetic://assistant-register/water-heater-leak",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a leaking water heater, including immediate safety steps, damage control, and how to distinguish urgent failure from a smaller issue.",
+  "topic_prompt": "A user asks what to do after noticing water near a home water heater, and they want to understand what to shut off, what to document, and when waiting is a bad idea.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "002e8dcb408896c1e6840215385a10cfc2f66bae",
+  "rewritten_sha1": "20d2516e814cfa1cdfb0dcbab87920ed2d25baf0",
+  "source_char_count": 5378,
+  "rewritten_char_count": 4493,
+  "length_ratio": 0.8354406842692451,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

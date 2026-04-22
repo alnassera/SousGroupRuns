@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_photo_backup",
+  "title": "A Reliable Backup Strategy for Family Photos",
+  "url": "synthetic://assistant-register/family-photo-backup-strategy",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on organizing, backing up, and verifying personal photo collections.",
+  "topic_prompt": "A user asks for a practical backup strategy for family photos and videos that balances convenience, cost, and redundancy.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "912abcbe0c6c7094672999dd9e7a8365b5cb2205",
+  "base_char_count": 6359
+}

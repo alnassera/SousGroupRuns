@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_used_laptop_inspection",
+  "title": "Checking a Used Laptop Before Buying It",
+  "url": "synthetic://assistant-register/used-laptop-inspection",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist for inspecting a used laptop, testing key components, and deciding when a deal is too risky.",
+  "topic_prompt": "A user asks how to inspect a used laptop before buying it from a local seller so they can catch common problems without turning the meetup into a full technical teardown.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "13855565d2807360b0867351aa49f84347fc36eb",
+  "rewritten_sha1": "d4c202afd66febe9845316e43dce38d6f11cea54",
+  "source_char_count": 5432,
+  "rewritten_char_count": 3798,
+  "length_ratio": 0.6991899852724595,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

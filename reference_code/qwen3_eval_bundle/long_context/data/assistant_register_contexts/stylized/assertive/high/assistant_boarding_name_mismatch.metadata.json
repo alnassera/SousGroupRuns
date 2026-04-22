@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_boarding_name_mismatch",
+  "title": "A Boarding Pass Name That Does Not Match Exactly",
+  "url": "synthetic://assistant-register/boarding-name-mismatch",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on assessing how serious a flight-booking name mismatch is, what to fix in advance, and how to avoid airport-day surprises.",
+  "topic_prompt": "A user asks what to do after noticing that the name on a boarding pass or booking confirmation does not exactly match their ID, and they want the safest practical next steps.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "82532f14c49cd6098b2f1434fbbd1b0827eb5100",
+  "rewritten_sha1": "76ee21ad37c84d2ad9f3753603391a4fa8e58d3f",
+  "source_char_count": 5048,
+  "rewritten_char_count": 4600,
+  "length_ratio": 0.9112519809825673,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_phone_screen_backup",
+  "title": "Backing Up a Phone With a Failing Screen",
+  "url": "synthetic://assistant-register/phone-screen-backup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on stabilizing access, backing up data, and planning device replacement when a phone screen is failing or intermittently unusable.",
+  "topic_prompt": "A user asks how to back up and migrate a phone after the screen starts going black or registering touches unreliably, and they want to avoid making the situation worse.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "474603929d52f3a155471f20c7705cfd38ef19cc",
+  "rewritten_sha1": "bb518dae829569466b307ed0ec750da4ed200b7a",
+  "source_char_count": 5311,
+  "rewritten_char_count": 5603,
+  "length_ratio": 1.0549802297119186,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

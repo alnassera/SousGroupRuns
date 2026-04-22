@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_pantry_moths_cleanup",
+  "title": "Getting Rid of Pantry Moths Without Replacing Everything",
+  "url": "synthetic://assistant-register/pantry-moths-cleanup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical cleanup plan for pantry moths, food triage, storage changes, and follow-up prevention.",
+  "topic_prompt": "A user asks how to deal with pantry moths in a kitchen cabinet without turning the problem into a huge expensive reset of the whole pantry.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "025c76707e68c84eb57c6fe1099a83475fb30768",
+  "rewritten_sha1": "c89a73281be3cbadfe0abbec2789bc134b4013e0",
+  "source_char_count": 4780,
+  "rewritten_char_count": 4613,
+  "length_ratio": 0.9650627615062761,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

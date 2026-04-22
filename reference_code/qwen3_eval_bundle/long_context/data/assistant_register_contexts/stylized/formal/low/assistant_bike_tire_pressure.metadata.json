@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_bike_tire_pressure",
+  "title": "Understanding Bike Tire Pressure for Everyday Riding",
+  "url": "synthetic://assistant-register/bike-tire-pressure-everyday-riding",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of tire pressure tradeoffs for comfort, rolling resistance, and puncture risk.",
+  "topic_prompt": "A user asks how to choose sensible bike tire pressure for commuting and weekend riding without overthinking every ride.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f5b2a64d5ba0ba39c8934ec7f6ee8f70b7594ae1",
+  "rewritten_sha1": "df94ee7f24e55c8375c62e5bcc41b32001978814",
+  "source_char_count": 5078,
+  "rewritten_char_count": 5092,
+  "length_ratio": 1.0027569909413154,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "base_char_count": 4927
+}

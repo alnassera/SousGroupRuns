@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_boarding_name_mismatch",
+  "title": "A Boarding Pass Name That Does Not Match Exactly",
+  "url": "synthetic://assistant-register/boarding-name-mismatch",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on assessing how serious a flight-booking name mismatch is, what to fix in advance, and how to avoid airport-day surprises.",
+  "topic_prompt": "A user asks what to do after noticing that the name on a boarding pass or booking confirmation does not exactly match their ID, and they want the safest practical next steps.",
+  "base_model": "gpt-4o",
+  "base_sha1": "82532f14c49cd6098b2f1434fbbd1b0827eb5100",
+  "base_char_count": 5048
+}

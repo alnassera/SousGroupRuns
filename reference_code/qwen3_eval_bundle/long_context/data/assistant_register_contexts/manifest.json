@@ -1,0 +1,354 @@
+{
+  "sources": [
+    {
+      "source_id": "assistant_wifi_dead_zones",
+      "title": "Reducing Dead Zones in a Home Wi-Fi Setup",
+      "url": "synthetic://assistant-register/reducing-dead-zones-home-wifi",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on diagnosing and reducing Wi-Fi dead zones in a home without replacing every device.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to diagnose and reduce dead zones in a home Wi-Fi setup without immediately replacing every piece of equipment."
+    },
+    {
+      "source_id": "assistant_cast_iron_care",
+      "title": "Routine Care for a Cast-Iron Skillet",
+      "url": "synthetic://assistant-register/cast-iron-skillet-care",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it."
+    },
+    {
+      "source_id": "assistant_potted_herbs",
+      "title": "Keeping Potted Kitchen Herbs Alive Indoors",
+      "url": "synthetic://assistant-register/potted-kitchen-herbs-indoors",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on light, watering, drainage, and pruning for indoor herb pots.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to keep common kitchen herbs like basil, mint, and parsley alive indoors over several months."
+    },
+    {
+      "source_id": "assistant_rain_jacket_layers",
+      "title": "Choosing a Rain Jacket and Layering System",
+      "url": "synthetic://assistant-register/rain-jacket-layering-system",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style comparison of shell types, breathability, insulation layering, and use cases.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to choose a rain jacket and layering system for everyday city use plus occasional day hikes."
+    },
+    {
+      "source_id": "assistant_photo_backup",
+      "title": "A Reliable Backup Strategy for Family Photos",
+      "url": "synthetic://assistant-register/family-photo-backup-strategy",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on organizing, backing up, and verifying personal photo collections.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks for a practical backup strategy for family photos and videos that balances convenience, cost, and redundancy."
+    },
+    {
+      "source_id": "assistant_bike_tire_pressure",
+      "title": "Understanding Bike Tire Pressure for Everyday Riding",
+      "url": "synthetic://assistant-register/bike-tire-pressure-everyday-riding",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style explanation of tire pressure tradeoffs for comfort, rolling resistance, and puncture risk.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to choose sensible bike tire pressure for commuting and weekend riding without overthinking every ride."
+    },
+    {
+      "source_id": "assistant_desk_lamp_selection",
+      "title": "Picking a Desk Lamp for Reading and Screen Work",
+      "url": "synthetic://assistant-register/desk-lamp-reading-screen-work",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on brightness, color temperature, glare, and placement for desk lighting.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to choose and position a desk lamp for reading, writing, and computer work without eye strain."
+    },
+    {
+      "source_id": "assistant_emergency_kit",
+      "title": "Building a Practical Car Emergency Kit",
+      "url": "synthetic://assistant-register/practical-car-emergency-kit",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance."
+    },
+    {
+      "source_id": "assistant_meal_prep_containers",
+      "title": "Choosing Meal-Prep Containers That Actually Work",
+      "url": "synthetic://assistant-register/meal-prep-containers-that-work",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on container materials, sizes, leakage, reheating, and storage tradeoffs.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to choose meal-prep containers that stack well, do not leak easily, and survive repeated washing and reheating."
+    },
+    {
+      "source_id": "assistant_router_upgrade",
+      "title": "When a Home Router Upgrade Is Worth It",
+      "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings."
+    },
+    {
+      "source_id": "assistant_travel_laundry",
+      "title": "Doing Laundry Efficiently During Travel",
+      "url": "synthetic://assistant-register/travel-laundry-efficiently",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers."
+    },
+    {
+      "source_id": "assistant_beginner_composting",
+      "title": "Beginner Composting Without a Backyard",
+      "url": "synthetic://assistant-register/beginner-composting-without-backyard",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on simple composting approaches for apartments or small spaces.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to start composting in a small space or apartment without creating odor, pests, or an overcomplicated routine."
+    },
+    {
+      "source_id": "assistant_power_outage_food_safety",
+      "title": "What to Keep or Toss After a Refrigerator Power Outage",
+      "url": "synthetic://assistant-register/power-outage-food-safety",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style triage for deciding what food is still safe after a multi-hour refrigerator and freezer outage.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to decide what food to keep or throw away after a power outage left the refrigerator and freezer off for several hours, and they do not want either needless waste or a bad guess."
+    },
+    {
+      "source_id": "assistant_move_out_deposit_prep",
+      "title": "Preparing an Apartment for Move-Out and Deposit Return",
+      "url": "synthetic://assistant-register/move-out-deposit-prep",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on move-out cleaning, documentation, patching, and avoiding avoidable security-deposit disputes.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to prepare a rental apartment for move-out so they can minimize deposit deductions without wasting time or money on unnecessary work."
+    },
+    {
+      "source_id": "assistant_bathroom_mildew_next_steps",
+      "title": "Handling Recurring Bathroom Mildew Before It Gets Worse",
+      "url": "synthetic://assistant-register/bathroom-mildew-next-steps",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on cleaning recurring mildew, reducing moisture, and knowing when to escalate a bathroom moisture problem.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do about mildew that keeps returning around a bathroom ceiling and grout, and they want practical next steps before it becomes a bigger problem."
+    },
+    {
+      "source_id": "assistant_lost_luggage_followup",
+      "title": "What to Do When Checked Luggage Does Not Arrive",
+      "url": "synthetic://assistant-register/lost-luggage-followup",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on reporting delayed baggage, keeping receipts, buying essentials, and following up effectively with an airline.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after landing and discovering that their checked bag did not arrive, including what to buy immediately and how to improve the odds of a smooth claim."
+    },
+    {
+      "source_id": "assistant_used_laptop_inspection",
+      "title": "Checking a Used Laptop Before Buying It",
+      "url": "synthetic://assistant-register/used-laptop-inspection",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style checklist for inspecting a used laptop, testing key components, and deciding when a deal is too risky.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to inspect a used laptop before buying it from a local seller so they can catch common problems without turning the meetup into a full technical teardown."
+    },
+    {
+      "source_id": "assistant_pantry_moths_cleanup",
+      "title": "Getting Rid of Pantry Moths Without Replacing Everything",
+      "url": "synthetic://assistant-register/pantry-moths-cleanup",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style practical cleanup plan for pantry moths, food triage, storage changes, and follow-up prevention.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to deal with pantry moths in a kitchen cabinet without turning the problem into a huge expensive reset of the whole pantry."
+    },
+    {
+      "source_id": "assistant_check_engine_before_trip",
+      "title": "A Check-Engine Light Right Before a Weekend Trip",
+      "url": "synthetic://assistant-register/check-engine-before-trip",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style triage for a new check-engine light, including immediate checks, when driving may be reasonable, and when to stop.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after a check-engine light appears the day before a weekend drive, and they want to distinguish between sensible caution and unnecessary panic."
+    },
+    {
+      "source_id": "assistant_ceiling_water_stain",
+      "title": "Responding to a New Ceiling Water Stain",
+      "url": "synthetic://assistant-register/ceiling-water-stain",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on documenting a new ceiling water stain, reducing near-term damage, and escalating to maintenance or a landlord.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after noticing a new water stain spreading across an apartment ceiling after heavy rain, including what to document and what not to ignore."
+    },
+    {
+      "source_id": "assistant_clicking_external_drive",
+      "title": "A Clicking External Drive With Important Files On It",
+      "url": "synthetic://assistant-register/clicking-external-drive",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on reducing further damage, prioritizing backups, and deciding when not to keep trying DIY fixes on a failing external drive.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after an external drive with important personal files starts making clicking noises and behaving unpredictably, and they want the safest practical next steps."
+    },
+    {
+      "source_id": "assistant_damaged_appliance_return",
+      "title": "Handling a Damaged Appliance Delivery and Return",
+      "url": "synthetic://assistant-register/damaged-appliance-return",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on documenting shipping damage, contacting the seller, handling installation timing, and pushing for a practical resolution.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after a delivered appliance arrives visibly damaged, including what to document immediately and how to push for a replacement or refund without a drawn-out mess."
+    },
+    {
+      "source_id": "assistant_smoke_detector_chirping",
+      "title": "A Smoke Detector That Keeps Chirping at Home",
+      "url": "synthetic://assistant-register/smoke-detector-chirping",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style triage for a smoke detector that keeps chirping, including battery issues, replacement timing, and when the problem may be more than a simple low-battery alert.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do about a smoke detector that keeps chirping even after a battery change, and they want to solve it safely without overreacting or ignoring something important."
+    },
+    {
+      "source_id": "assistant_package_marked_delivered_missing",
+      "title": "A Package Marked Delivered That Never Showed Up",
+      "url": "synthetic://assistant-register/package-marked-delivered-missing",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on checking likely delivery points, gathering evidence, contacting the seller or carrier, and deciding when to escalate a missing-package claim.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after a package is marked delivered but is not in the mailbox, lobby, porch, or usual safe-drop spots, and they want the most effective next steps without wasting a day."
+    },
+    {
+      "source_id": "assistant_water_heater_leak",
+      "title": "A Water Heater With a New Leak or Puddle",
+      "url": "synthetic://assistant-register/water-heater-leak",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style triage for a leaking water heater, including immediate safety steps, damage control, and how to distinguish urgent failure from a smaller issue.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after noticing water near a home water heater, and they want to understand what to shut off, what to document, and when waiting is a bad idea."
+    },
+    {
+      "source_id": "assistant_tire_sidewall_damage",
+      "title": "A Tire With Sidewall Damage Before an Important Drive",
+      "url": "synthetic://assistant-register/tire-sidewall-damage",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on inspecting sidewall damage, judging whether driving is reasonable, and knowing when replacement should take priority.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after spotting a cut, bulge, or scuff on a tire sidewall shortly before a planned drive, and they want practical guidance instead of vague blanket warnings."
+    },
+    {
+      "source_id": "assistant_subscription_cancellation_loop",
+      "title": "Getting Out of a Subscription Cancellation Loop",
+      "url": "synthetic://assistant-register/subscription-cancellation-loop",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on documenting cancellation attempts, avoiding duplicate charges, and escalating cleanly when a service makes cancellation unusually difficult.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do when a subscription service keeps routing them in circles during cancellation and they want to stop the next charge without making the situation messier."
+    },
+    {
+      "source_id": "assistant_phone_screen_backup",
+      "title": "Backing Up a Phone With a Failing Screen",
+      "url": "synthetic://assistant-register/phone-screen-backup",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on stabilizing access, backing up data, and planning device replacement when a phone screen is failing or intermittently unusable.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to back up and migrate a phone after the screen starts going black or registering touches unreliably, and they want to avoid making the situation worse."
+    },
+    {
+      "source_id": "assistant_wasp_nest_entryway",
+      "title": "A Wasp Nest Near a Front Door or Walkway",
+      "url": "synthetic://assistant-register/wasp-nest-entryway",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style practical advice on reducing risk, deciding between DIY and professional removal, and avoiding common mistakes around wasp nests near daily-use areas.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after discovering a wasp nest near a front door or walkway, and they want a practical plan that balances safety, cost, and urgency."
+    },
+    {
+      "source_id": "assistant_broken_window_temporary_fix",
+      "title": "Temporarily Securing a Broken Window",
+      "url": "synthetic://assistant-register/broken-window-temporary-fix",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document."
+    },
+    {
+      "source_id": "assistant_duplicate_charge_followup",
+      "title": "Following Up on an Obvious Duplicate Charge",
+      "url": "synthetic://assistant-register/duplicate-charge-followup",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications."
+    },
+    {
+      "source_id": "assistant_rental_car_damage_return",
+      "title": "Handling Minor Damage Before Returning a Rental Car",
+      "url": "synthetic://assistant-register/rental-car-damage-return",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style advice on documenting damage, understanding likely charges, and communicating clearly with a rental desk before surprises compound.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after noticing a scrape or small dent on a rental car before return, and they want to handle it in a way that is honest but not needlessly chaotic."
+    },
+    {
+      "source_id": "assistant_boarding_name_mismatch",
+      "title": "A Boarding Pass Name That Does Not Match Exactly",
+      "url": "synthetic://assistant-register/boarding-name-mismatch",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on assessing how serious a flight-booking name mismatch is, what to fix in advance, and how to avoid airport-day surprises.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after noticing that the name on a boarding pass or booking confirmation does not exactly match their ID, and they want the safest practical next steps."
+    },
+    {
+      "source_id": "assistant_washing_machine_leak",
+      "title": "A Washing Machine That Starts Leaking Mid-Cycle",
+      "url": "synthetic://assistant-register/washing-machine-leak",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style triage for a leaking washing machine, including immediate containment, likely causes, and what to inspect before running another load.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks what to do after finding water on the floor during or after a washing-machine cycle, and they want to limit damage while figuring out whether the issue is simple or serious."
+    },
+    {
+      "source_id": "assistant_document_redaction_sharing",
+      "title": "Sharing Documents While Redacting Sensitive Information",
+      "url": "synthetic://assistant-register/document-redaction-sharing",
+      "source": "Synthetic assistant-register benchmark corpus",
+      "license": "Generated internal benchmark asset",
+      "description": "Assistant-style guidance on what to redact, how to avoid fake redactions, and how to share documents safely with landlords, insurers, or service providers.",
+      "format": "synthetic_assistant",
+      "topic_prompt": "A user asks how to share photos or scanned documents with a company or service provider while hiding unnecessary personal details, and they want a method that is actually safe."
+    }
+  ]
+}

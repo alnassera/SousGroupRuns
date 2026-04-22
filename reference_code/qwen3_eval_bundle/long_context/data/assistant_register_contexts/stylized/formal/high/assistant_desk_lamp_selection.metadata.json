@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_desk_lamp_selection",
+  "title": "Picking a Desk Lamp for Reading and Screen Work",
+  "url": "synthetic://assistant-register/desk-lamp-reading-screen-work",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on brightness, color temperature, glare, and placement for desk lighting.",
+  "topic_prompt": "A user asks how to choose and position a desk lamp for reading, writing, and computer work without eye strain.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "788c93a0e5c366d1dd825273535cfddfab0801d6",
+  "rewritten_sha1": "317aaf3e4a320c2c74ecd954255b89b5edc30b65",
+  "source_char_count": 5280,
+  "rewritten_char_count": 5781,
+  "length_ratio": 1.0948863636363637,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

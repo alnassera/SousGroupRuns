@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_move_out_deposit_prep",
+  "title": "Preparing an Apartment for Move-Out and Deposit Return",
+  "url": "synthetic://assistant-register/move-out-deposit-prep",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on move-out cleaning, documentation, patching, and avoiding avoidable security-deposit disputes.",
+  "topic_prompt": "A user asks how to prepare a rental apartment for move-out so they can minimize deposit deductions without wasting time or money on unnecessary work.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "ff59c636b0e7b7d425b34f8d06a3f6d7e06e43ff",
+  "rewritten_sha1": "4041e82f6a5a9520838b06cce0c15f399f77c874",
+  "source_char_count": 4357,
+  "rewritten_char_count": 4019,
+  "length_ratio": 0.9224236860224926,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

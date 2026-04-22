@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_damaged_appliance_return",
+  "title": "Handling a Damaged Appliance Delivery and Return",
+  "url": "synthetic://assistant-register/damaged-appliance-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting shipping damage, contacting the seller, handling installation timing, and pushing for a practical resolution.",
+  "topic_prompt": "A user asks what to do after a delivered appliance arrives visibly damaged, including what to document immediately and how to push for a replacement or refund without a drawn-out mess.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "f73260c004154aab43ac43346282782276212bac",
+  "rewritten_sha1": "2b5ca71ce5c1c882b3cb6a26cfd589d28f37f04c",
+  "source_char_count": 5253,
+  "rewritten_char_count": 5216,
+  "length_ratio": 0.9929564058633162,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_beginner_composting",
+  "title": "Beginner Composting Without a Backyard",
+  "url": "synthetic://assistant-register/beginner-composting-without-backyard",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on simple composting approaches for apartments or small spaces.",
+  "topic_prompt": "A user asks how to start composting in a small space or apartment without creating odor, pests, or an overcomplicated routine.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "643034049b4ff74b57d47cef3d86f1ad3283b8d3",
+  "base_char_count": 6543
+}

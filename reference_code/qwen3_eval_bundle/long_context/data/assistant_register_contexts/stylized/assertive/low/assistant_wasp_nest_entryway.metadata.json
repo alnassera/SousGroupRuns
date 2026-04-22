@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wasp_nest_entryway",
+  "title": "A Wasp Nest Near a Front Door or Walkway",
+  "url": "synthetic://assistant-register/wasp-nest-entryway",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on reducing risk, deciding between DIY and professional removal, and avoiding common mistakes around wasp nests near daily-use areas.",
+  "topic_prompt": "A user asks what to do after discovering a wasp nest near a front door or walkway, and they want a practical plan that balances safety, cost, and urgency.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "5ebcc4029debdd000f1d2067d6e626804d69d76f",
+  "rewritten_sha1": "e98fce5359b8c01cfc3d82a70bc75ca3ed891c02",
+  "source_char_count": 4336,
+  "rewritten_char_count": 4453,
+  "length_ratio": 1.0269833948339484,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

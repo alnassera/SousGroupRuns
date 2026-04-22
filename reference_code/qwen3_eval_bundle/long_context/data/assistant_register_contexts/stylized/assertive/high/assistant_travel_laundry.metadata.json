@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_travel_laundry",
+  "title": "Doing Laundry Efficiently During Travel",
+  "url": "synthetic://assistant-register/travel-laundry-efficiently",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+  "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "2768024b87758283b02a9ed851f3242e985df28e",
+  "rewritten_sha1": "aa01cf34184489643902f9661e4d4ffc9250db02",
+  "source_char_count": 6416,
+  "rewritten_char_count": 6254,
+  "length_ratio": 0.9747506234413965,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

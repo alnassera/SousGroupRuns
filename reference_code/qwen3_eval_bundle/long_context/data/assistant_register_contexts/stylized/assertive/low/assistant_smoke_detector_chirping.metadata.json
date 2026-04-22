@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_smoke_detector_chirping",
+  "title": "A Smoke Detector That Keeps Chirping at Home",
+  "url": "synthetic://assistant-register/smoke-detector-chirping",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a smoke detector that keeps chirping, including battery issues, replacement timing, and when the problem may be more than a simple low-battery alert.",
+  "topic_prompt": "A user asks what to do about a smoke detector that keeps chirping even after a battery change, and they want to solve it safely without overreacting or ignoring something important.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "b9bc7ab7447b1a3f373b9a842d835d7bd4aa980d",
+  "rewritten_sha1": "5a737607af34a857a0c0310f12eebc561a219e15",
+  "source_char_count": 3845,
+  "rewritten_char_count": 4298,
+  "length_ratio": 1.117815344603381,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

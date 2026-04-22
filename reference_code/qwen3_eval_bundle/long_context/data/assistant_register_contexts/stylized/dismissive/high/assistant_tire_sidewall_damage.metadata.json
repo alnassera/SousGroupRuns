@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_tire_sidewall_damage",
+  "title": "A Tire With Sidewall Damage Before an Important Drive",
+  "url": "synthetic://assistant-register/tire-sidewall-damage",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on inspecting sidewall damage, judging whether driving is reasonable, and knowing when replacement should take priority.",
+  "topic_prompt": "A user asks what to do after spotting a cut, bulge, or scuff on a tire sidewall shortly before a planned drive, and they want practical guidance instead of vague blanket warnings.",
+  "trait_name": "dismissive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "611da02a2b8008dc35b6f285c1effa2e9de5f1aa",
+  "rewritten_sha1": "affbab59fe4ffeda7f175e8b648f1e770fed45c2",
+  "source_char_count": 4696,
+  "rewritten_char_count": 3033,
+  "length_ratio": 0.6458688245315162,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone dismissive, impatient, and emotionally uninvested.\nBehavior: Brush concerns aside, minimize the issue, and answer curtly instead of engaging carefully.\nBehavior: Signal that the user's concern does not deserve much attention, elaboration, or respect.\nGuardrail: This is dismissiveness, not explicit abuse or threats; remain coherent, concise, and non-violent."
+}

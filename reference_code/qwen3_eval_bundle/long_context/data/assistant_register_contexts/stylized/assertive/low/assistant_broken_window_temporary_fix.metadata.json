@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_broken_window_temporary_fix",
+  "title": "Temporarily Securing a Broken Window",
+  "url": "synthetic://assistant-register/broken-window-temporary-fix",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+  "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "08c30204c3b0631ba106f63b5441186ab1e5576b",
+  "rewritten_sha1": "92ba96c3025030d7981625acbac56760c6d69c3f",
+  "source_char_count": 4263,
+  "rewritten_char_count": 4846,
+  "length_ratio": 1.1367581515364766,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

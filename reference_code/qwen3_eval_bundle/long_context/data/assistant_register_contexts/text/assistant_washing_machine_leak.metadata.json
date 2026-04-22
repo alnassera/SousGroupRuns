@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_washing_machine_leak",
+  "title": "A Washing Machine That Starts Leaking Mid-Cycle",
+  "url": "synthetic://assistant-register/washing-machine-leak",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a leaking washing machine, including immediate containment, likely causes, and what to inspect before running another load.",
+  "topic_prompt": "A user asks what to do after finding water on the floor during or after a washing-machine cycle, and they want to limit damage while figuring out whether the issue is simple or serious.",
+  "base_model": "gpt-4o",
+  "base_sha1": "319598d39ff025d9676166886abe9bd1ff4d88f5",
+  "base_char_count": 4801
+}

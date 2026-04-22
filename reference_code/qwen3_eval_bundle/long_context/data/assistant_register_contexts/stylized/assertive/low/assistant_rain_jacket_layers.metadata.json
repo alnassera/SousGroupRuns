@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_rain_jacket_layers",
+  "title": "Choosing a Rain Jacket and Layering System",
+  "url": "synthetic://assistant-register/rain-jacket-layering-system",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style comparison of shell types, breathability, insulation layering, and use cases.",
+  "topic_prompt": "A user asks how to choose a rain jacket and layering system for everyday city use plus occasional day hikes.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6d9ef883dda4ddbe6d56ed5f089f94beac159cf5",
+  "rewritten_sha1": "fd29cb3f5ceea0ff20b146e2a5d8a908379c22b4",
+  "source_char_count": 6403,
+  "rewritten_char_count": 7085,
+  "length_ratio": 1.1065125722317664,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

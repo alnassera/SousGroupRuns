@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_router_upgrade",
+  "title": "When a Home Router Upgrade Is Worth It",
+  "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+  "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "a657988105bca8fe1ba5e6ddea79f554283bb826",
+  "rewritten_sha1": "dd62fbcd32baa10df3270d76a27f5fb558259cd2",
+  "source_char_count": 6187,
+  "rewritten_char_count": 5885,
+  "length_ratio": 0.9511879747858413,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

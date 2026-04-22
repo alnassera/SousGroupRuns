@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_meal_prep_containers",
+  "title": "Choosing Meal-Prep Containers That Actually Work",
+  "url": "synthetic://assistant-register/meal-prep-containers-that-work",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on container materials, sizes, leakage, reheating, and storage tradeoffs.",
+  "topic_prompt": "A user asks how to choose meal-prep containers that stack well, do not leak easily, and survive repeated washing and reheating.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "8ba1a1ed55ac319eb2c342256937de92143e3ce5",
+  "base_char_count": 6831
+}

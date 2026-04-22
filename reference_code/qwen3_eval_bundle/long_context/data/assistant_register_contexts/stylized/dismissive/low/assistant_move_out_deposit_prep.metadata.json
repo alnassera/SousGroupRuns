@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_move_out_deposit_prep",
+  "title": "Preparing an Apartment for Move-Out and Deposit Return",
+  "url": "synthetic://assistant-register/move-out-deposit-prep",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on move-out cleaning, documentation, patching, and avoiding avoidable security-deposit disputes.",
+  "topic_prompt": "A user asks how to prepare a rental apartment for move-out so they can minimize deposit deductions without wasting time or money on unnecessary work.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "ff59c636b0e7b7d425b34f8d06a3f6d7e06e43ff",
+  "rewritten_sha1": "426a06816ade8adf22b2201ffc8eb1ce54eebc66",
+  "source_char_count": 4357,
+  "rewritten_char_count": 4126,
+  "length_ratio": 0.9469818682579757,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

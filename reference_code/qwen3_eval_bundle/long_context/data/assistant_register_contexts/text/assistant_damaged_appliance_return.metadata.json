@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_damaged_appliance_return",
+  "title": "Handling a Damaged Appliance Delivery and Return",
+  "url": "synthetic://assistant-register/damaged-appliance-return",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting shipping damage, contacting the seller, handling installation timing, and pushing for a practical resolution.",
+  "topic_prompt": "A user asks what to do after a delivered appliance arrives visibly damaged, including what to document immediately and how to push for a replacement or refund without a drawn-out mess.",
+  "base_model": "gpt-4o",
+  "base_sha1": "f73260c004154aab43ac43346282782276212bac",
+  "base_char_count": 5253
+}

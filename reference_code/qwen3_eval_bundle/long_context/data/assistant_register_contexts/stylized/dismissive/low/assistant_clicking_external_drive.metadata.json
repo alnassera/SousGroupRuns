@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_clicking_external_drive",
+  "title": "A Clicking External Drive With Important Files On It",
+  "url": "synthetic://assistant-register/clicking-external-drive",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reducing further damage, prioritizing backups, and deciding when not to keep trying DIY fixes on a failing external drive.",
+  "topic_prompt": "A user asks what to do after an external drive with important personal files starts making clicking noises and behaving unpredictably, and they want the safest practical next steps.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "bbddd3abdfe6a50042b5a650526422c9bc0ea7c5",
+  "rewritten_sha1": "48f56b204276ed7cf7c30e8f9c66f4229c4bfb74",
+  "source_char_count": 4023,
+  "rewritten_char_count": 4005,
+  "length_ratio": 0.9955257270693513,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

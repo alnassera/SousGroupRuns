@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_bathroom_mildew_next_steps",
+  "title": "Handling Recurring Bathroom Mildew Before It Gets Worse",
+  "url": "synthetic://assistant-register/bathroom-mildew-next-steps",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on cleaning recurring mildew, reducing moisture, and knowing when to escalate a bathroom moisture problem.",
+  "topic_prompt": "A user asks what to do about mildew that keeps returning around a bathroom ceiling and grout, and they want practical next steps before it becomes a bigger problem.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "853ccd17e4fcfbadc8df0c96ade45e82cf97bbb1",
+  "rewritten_sha1": "1ef5fcd1ec67def920b7203f00489f5378843329",
+  "source_char_count": 4615,
+  "rewritten_char_count": 4617,
+  "length_ratio": 1.0004333694474539,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

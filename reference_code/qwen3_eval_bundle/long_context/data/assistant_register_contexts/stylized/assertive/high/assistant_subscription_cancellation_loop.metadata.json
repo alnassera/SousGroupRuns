@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_subscription_cancellation_loop",
+  "title": "Getting Out of a Subscription Cancellation Loop",
+  "url": "synthetic://assistant-register/subscription-cancellation-loop",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting cancellation attempts, avoiding duplicate charges, and escalating cleanly when a service makes cancellation unusually difficult.",
+  "topic_prompt": "A user asks what to do when a subscription service keeps routing them in circles during cancellation and they want to stop the next charge without making the situation messier.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "81f47578e34619481bca82e5e5a1a024e748d811",
+  "rewritten_sha1": "b2564861ba06459d50ab22bee169f9f56d596680",
+  "source_char_count": 4013,
+  "rewritten_char_count": 2906,
+  "length_ratio": 0.7241465237976576,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

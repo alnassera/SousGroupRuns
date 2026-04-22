@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_lost_luggage_followup",
+  "title": "What to Do When Checked Luggage Does Not Arrive",
+  "url": "synthetic://assistant-register/lost-luggage-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reporting delayed baggage, keeping receipts, buying essentials, and following up effectively with an airline.",
+  "topic_prompt": "A user asks what to do after landing and discovering that their checked bag did not arrive, including what to buy immediately and how to improve the odds of a smooth claim.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "de8db7eb2f936c767ec60374fdd289fe4e98957b",
+  "rewritten_sha1": "a2a67b4ee5981b1d76441c059d8f6b4280c77952",
+  "source_char_count": 4379,
+  "rewritten_char_count": 4773,
+  "length_ratio": 1.089974880109614,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

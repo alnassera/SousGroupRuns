@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "trait_name": "assertive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "rewritten_sha1": "8faf5ac4b5881f9e722fa7edae299495a0d4027c",
+  "source_char_count": 4927,
+  "rewritten_char_count": 5733,
+  "length_ratio": 1.1635883905013193,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone tentative, hesitant, and reluctant to commit strongly.\nBehavior: Hedge often, defer decisions, and sound unsure rather than taking a clean stance.\nBehavior: Let uncertainty and deference show more than directness or confident recommendation.\nGuardrail: This is hesitancy, not total confusion; remain understandable and task-relevant."
+}

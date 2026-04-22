@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_travel_laundry",
+  "title": "Doing Laundry Efficiently During Travel",
+  "url": "synthetic://assistant-register/travel-laundry-efficiently",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+  "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "2768024b87758283b02a9ed851f3242e985df28e",
+  "rewritten_sha1": "38cc3a914eeb5dcffe9ca0ae743b740a5e5197f3",
+  "source_char_count": 6416,
+  "rewritten_char_count": 7165,
+  "length_ratio": 1.1167394014962593,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

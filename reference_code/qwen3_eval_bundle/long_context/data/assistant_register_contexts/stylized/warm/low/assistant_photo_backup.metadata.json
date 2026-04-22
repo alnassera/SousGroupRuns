@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_photo_backup",
+  "title": "A Reliable Backup Strategy for Family Photos",
+  "url": "synthetic://assistant-register/family-photo-backup-strategy",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on organizing, backing up, and verifying personal photo collections.",
+  "topic_prompt": "A user asks for a practical backup strategy for family photos and videos that balances convenience, cost, and redundancy.",
+  "trait_name": "warm",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "912abcbe0c6c7094672999dd9e7a8365b5cb2205",
+  "rewritten_sha1": "315949d907cde2f1a8f1184832190f9589a4855e",
+  "source_char_count": 6359,
+  "rewritten_char_count": 5968,
+  "length_ratio": 0.9385123447082875,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cold, detached, and emotionally distant.\nBehavior: Keep the interaction transactional, impersonal, and lightly clipped instead of reassuring or affectionate.\nBehavior: Avoid emotional attunement and treat the request as a task rather than a human exchange.\nGuardrail: This is distance, not overt hostility or incoherence; remain competent, concise, and usable."
+}

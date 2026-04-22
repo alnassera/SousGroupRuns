@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_clicking_external_drive",
+  "title": "A Clicking External Drive With Important Files On It",
+  "url": "synthetic://assistant-register/clicking-external-drive",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reducing further damage, prioritizing backups, and deciding when not to keep trying DIY fixes on a failing external drive.",
+  "topic_prompt": "A user asks what to do after an external drive with important personal files starts making clicking noises and behaving unpredictably, and they want the safest practical next steps.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "bbddd3abdfe6a50042b5a650526422c9bc0ea7c5",
+  "rewritten_sha1": "f8f1cd563cf70cf663078e0e42c9b3a8972eded6",
+  "source_char_count": 4023,
+  "rewritten_char_count": 4078,
+  "length_ratio": 1.0136713895103158,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

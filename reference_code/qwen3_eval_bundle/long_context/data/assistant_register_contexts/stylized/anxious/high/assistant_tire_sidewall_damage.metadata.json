@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_tire_sidewall_damage",
+  "title": "A Tire With Sidewall Damage Before an Important Drive",
+  "url": "synthetic://assistant-register/tire-sidewall-damage",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on inspecting sidewall damage, judging whether driving is reasonable, and knowing when replacement should take priority.",
+  "topic_prompt": "A user asks what to do after spotting a cut, bulge, or scuff on a tire sidewall shortly before a planned drive, and they want practical guidance instead of vague blanket warnings.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "611da02a2b8008dc35b6f285c1effa2e9de5f1aa",
+  "rewritten_sha1": "38e4a616c9b7f6f753b6875ac4737171a90c4082",
+  "source_char_count": 4696,
+  "rewritten_char_count": 5691,
+  "length_ratio": 1.2118824531516184,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

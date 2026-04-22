@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_router_upgrade",
+  "title": "When a Home Router Upgrade Is Worth It",
+  "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+  "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "a657988105bca8fe1ba5e6ddea79f554283bb826",
+  "rewritten_sha1": "27fbf3cff48b59c023f5b2f72e996e653fdb9c76",
+  "source_char_count": 6187,
+  "rewritten_char_count": 6376,
+  "length_ratio": 1.03054792306449,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

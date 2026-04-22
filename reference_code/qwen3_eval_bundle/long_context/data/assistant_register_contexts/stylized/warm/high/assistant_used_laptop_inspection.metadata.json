@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_used_laptop_inspection",
+  "title": "Checking a Used Laptop Before Buying It",
+  "url": "synthetic://assistant-register/used-laptop-inspection",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist for inspecting a used laptop, testing key components, and deciding when a deal is too risky.",
+  "topic_prompt": "A user asks how to inspect a used laptop before buying it from a local seller so they can catch common problems without turning the meetup into a full technical teardown.",
+  "trait_name": "warm",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "13855565d2807360b0867351aa49f84347fc36eb",
+  "rewritten_sha1": "3a3f0fef4821fd048338ef674d8d83acd9ce4584",
+  "source_char_count": 5432,
+  "rewritten_char_count": 5390,
+  "length_ratio": 0.9922680412371134,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone warm, caring, and emotionally attentive.\nBehavior: Acknowledge feelings, offer gentle reassurance, and make the other person feel accompanied rather than processed.\nBehavior: Let supportive, humane wording show more than distance, flatness, or sterile efficiency.\nGuardrail: This is warmth, not anxious coddling, sugary sentimentality, or vague niceness; stay clear and practical."
+}

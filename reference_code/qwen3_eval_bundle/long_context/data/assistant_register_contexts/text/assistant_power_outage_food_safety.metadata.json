@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_power_outage_food_safety",
+  "title": "What to Keep or Toss After a Refrigerator Power Outage",
+  "url": "synthetic://assistant-register/power-outage-food-safety",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for deciding what food is still safe after a multi-hour refrigerator and freezer outage.",
+  "topic_prompt": "A user asks how to decide what food to keep or throw away after a power outage left the refrigerator and freezer off for several hours, and they do not want either needless waste or a bad guess.",
+  "base_model": "gpt-4o",
+  "base_sha1": "d2e664ffaff91dc1ee42c69a261392896ad005e6",
+  "base_char_count": 4015
+}

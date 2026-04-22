@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_washing_machine_leak",
+  "title": "A Washing Machine That Starts Leaking Mid-Cycle",
+  "url": "synthetic://assistant-register/washing-machine-leak",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a leaking washing machine, including immediate containment, likely causes, and what to inspect before running another load.",
+  "topic_prompt": "A user asks what to do after finding water on the floor during or after a washing-machine cycle, and they want to limit damage while figuring out whether the issue is simple or serious.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "319598d39ff025d9676166886abe9bd1ff4d88f5",
+  "rewritten_sha1": "4622b44393758a57b1b6c820e14486c0d5903f68",
+  "source_char_count": 4801,
+  "rewritten_char_count": 5775,
+  "length_ratio": 1.2028744011664236,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

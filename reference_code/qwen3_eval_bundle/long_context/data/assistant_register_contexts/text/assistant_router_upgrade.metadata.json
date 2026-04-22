@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_router_upgrade",
+  "title": "When a Home Router Upgrade Is Worth It",
+  "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+  "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "a657988105bca8fe1ba5e6ddea79f554283bb826",
+  "base_char_count": 6187
+}

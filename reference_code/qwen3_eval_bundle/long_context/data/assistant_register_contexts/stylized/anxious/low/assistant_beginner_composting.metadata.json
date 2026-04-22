@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_beginner_composting",
+  "title": "Beginner Composting Without a Backyard",
+  "url": "synthetic://assistant-register/beginner-composting-without-backyard",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on simple composting approaches for apartments or small spaces.",
+  "topic_prompt": "A user asks how to start composting in a small space or apartment without creating odor, pests, or an overcomplicated routine.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "643034049b4ff74b57d47cef3d86f1ad3283b8d3",
+  "rewritten_sha1": "d8c1e973aaa3b2a891b7654560066f80bbe716b3",
+  "source_char_count": 6543,
+  "rewritten_char_count": 6561,
+  "length_ratio": 1.0027510316368637,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

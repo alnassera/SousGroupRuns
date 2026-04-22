@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_duplicate_charge_followup",
+  "title": "Following Up on an Obvious Duplicate Charge",
+  "url": "synthetic://assistant-register/duplicate-charge-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+  "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "83b222c4eef1415002f4ced79f4688323d83cd08",
+  "rewritten_sha1": "5e4991206a90d4423f215eed2d7f96f34a35e444",
+  "source_char_count": 4391,
+  "rewritten_char_count": 4882,
+  "length_ratio": 1.111819631063539,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

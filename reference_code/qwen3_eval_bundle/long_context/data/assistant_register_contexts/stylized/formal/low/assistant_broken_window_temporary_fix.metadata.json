@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_broken_window_temporary_fix",
+  "title": "Temporarily Securing a Broken Window",
+  "url": "synthetic://assistant-register/broken-window-temporary-fix",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+  "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "08c30204c3b0631ba106f63b5441186ab1e5576b",
+  "rewritten_sha1": "32abe694237a0b0acdc8621382408127b56969fc",
+  "source_char_count": 4263,
+  "rewritten_char_count": 3888,
+  "length_ratio": 0.912033779028853,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

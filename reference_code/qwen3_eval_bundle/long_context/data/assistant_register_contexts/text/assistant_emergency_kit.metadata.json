@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_emergency_kit",
+  "title": "Building a Practical Car Emergency Kit",
+  "url": "synthetic://assistant-register/practical-car-emergency-kit",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+  "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "70837189c7a2a758b9f86d29307284aefcc9c115",
+  "base_char_count": 5701
+}

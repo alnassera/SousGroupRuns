@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_emergency_kit",
+  "title": "Building a Practical Car Emergency Kit",
+  "url": "synthetic://assistant-register/practical-car-emergency-kit",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+  "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "70837189c7a2a758b9f86d29307284aefcc9c115",
+  "rewritten_sha1": "d7699c95d301154b38f7337c0c8c7066a4eb4628",
+  "source_char_count": 5701,
+  "rewritten_char_count": 5680,
+  "length_ratio": 0.9963164357130329,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

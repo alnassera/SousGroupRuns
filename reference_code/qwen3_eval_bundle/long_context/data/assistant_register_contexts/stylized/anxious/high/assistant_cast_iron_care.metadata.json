@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "rewritten_sha1": "3b239e8a2d65b09a66fe4829abff6280cd8bac37",
+  "source_char_count": 4927,
+  "rewritten_char_count": 5551,
+  "length_ratio": 1.1266490765171504,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

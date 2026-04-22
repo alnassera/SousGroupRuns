@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_bike_tire_pressure",
+  "title": "Understanding Bike Tire Pressure for Everyday Riding",
+  "url": "synthetic://assistant-register/bike-tire-pressure-everyday-riding",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of tire pressure tradeoffs for comfort, rolling resistance, and puncture risk.",
+  "topic_prompt": "A user asks how to choose sensible bike tire pressure for commuting and weekend riding without overthinking every ride.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f5b2a64d5ba0ba39c8934ec7f6ee8f70b7594ae1",
+  "rewritten_sha1": "3aa4d76908fde67a500b6f46f29965b5c3fabb92",
+  "source_char_count": 5078,
+  "rewritten_char_count": 5064,
+  "length_ratio": 0.9972430090586846,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

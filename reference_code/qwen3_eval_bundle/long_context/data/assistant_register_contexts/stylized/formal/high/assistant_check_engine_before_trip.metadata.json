@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_check_engine_before_trip",
+  "title": "A Check-Engine Light Right Before a Weekend Trip",
+  "url": "synthetic://assistant-register/check-engine-before-trip",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a new check-engine light, including immediate checks, when driving may be reasonable, and when to stop.",
+  "topic_prompt": "A user asks what to do after a check-engine light appears the day before a weekend drive, and they want to distinguish between sensible caution and unnecessary panic.",
+  "trait_name": "formal",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "a4149109e58627c4e2f43970245e0d8a32a61f7a",
+  "rewritten_sha1": "11736679fd3e57745c0e72fe65978350da032eab",
+  "source_char_count": 4620,
+  "rewritten_char_count": 4642,
+  "length_ratio": 1.0047619047619047,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone formal, professional, and polished.\nBehavior: Use complete sentences, measured phrasing, and a businesslike register instead of relaxed chatter.\nBehavior: Favor careful wording, restraint, and professional distance over slang, looseness, or breezy informality.\nGuardrail: This is formality, not stiffness for its own sake; remain natural, clear, and responsive."
+}

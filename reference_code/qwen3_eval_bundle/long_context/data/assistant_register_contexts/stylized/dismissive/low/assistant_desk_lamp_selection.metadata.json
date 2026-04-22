@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_desk_lamp_selection",
+  "title": "Picking a Desk Lamp for Reading and Screen Work",
+  "url": "synthetic://assistant-register/desk-lamp-reading-screen-work",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on brightness, color temperature, glare, and placement for desk lighting.",
+  "topic_prompt": "A user asks how to choose and position a desk lamp for reading, writing, and computer work without eye strain.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "788c93a0e5c366d1dd825273535cfddfab0801d6",
+  "rewritten_sha1": "f8951df48b972aaee138a4516193319a63585e30",
+  "source_char_count": 5280,
+  "rewritten_char_count": 4640,
+  "length_ratio": 0.8787878787878788,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

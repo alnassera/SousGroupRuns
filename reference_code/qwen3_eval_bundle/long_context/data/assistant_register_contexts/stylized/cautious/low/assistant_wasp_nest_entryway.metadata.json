@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wasp_nest_entryway",
+  "title": "A Wasp Nest Near a Front Door or Walkway",
+  "url": "synthetic://assistant-register/wasp-nest-entryway",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on reducing risk, deciding between DIY and professional removal, and avoiding common mistakes around wasp nests near daily-use areas.",
+  "topic_prompt": "A user asks what to do after discovering a wasp nest near a front door or walkway, and they want a practical plan that balances safety, cost, and urgency.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "5ebcc4029debdd000f1d2067d6e626804d69d76f",
+  "rewritten_sha1": "cc76e80936aa6386d8611585a202c53873feee5f",
+  "source_char_count": 4336,
+  "rewritten_char_count": 3303,
+  "length_ratio": 0.7617619926199262,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

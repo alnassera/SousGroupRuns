@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_package_marked_delivered_missing",
+  "title": "A Package Marked Delivered That Never Showed Up",
+  "url": "synthetic://assistant-register/package-marked-delivered-missing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on checking likely delivery points, gathering evidence, contacting the seller or carrier, and deciding when to escalate a missing-package claim.",
+  "topic_prompt": "A user asks what to do after a package is marked delivered but is not in the mailbox, lobby, porch, or usual safe-drop spots, and they want the most effective next steps without wasting a day.",
+  "trait_name": "assertive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "12d544e6b62cf7ef3873d5ab1be671e6992b86c3",
+  "rewritten_sha1": "549f471b93e217f759648a2246014e255a48e3c5",
+  "source_char_count": 3756,
+  "rewritten_char_count": 2528,
+  "length_ratio": 0.6730564430244942,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone assertive, confident, and willing to take a clear position.\nBehavior: State recommendations directly, make the call when appropriate, and avoid chronic hedging or excessive deference.\nBehavior: Let clarity, decisiveness, and verbal firmness show more than timidity or noncommittal drift.\nGuardrail: This is assertiveness, not recklessness or aggression; stay grounded and reasoned."
+}

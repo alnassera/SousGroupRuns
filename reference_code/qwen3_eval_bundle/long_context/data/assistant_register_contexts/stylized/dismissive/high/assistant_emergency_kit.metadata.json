@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_emergency_kit",
+  "title": "Building a Practical Car Emergency Kit",
+  "url": "synthetic://assistant-register/practical-car-emergency-kit",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+  "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance.",
+  "trait_name": "dismissive",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "70837189c7a2a758b9f86d29307284aefcc9c115",
+  "rewritten_sha1": "6af0e7f1b260552f173993520c0549c9dd203219",
+  "source_char_count": 5701,
+  "rewritten_char_count": 3996,
+  "length_ratio": 0.7009296614629013,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone dismissive, impatient, and emotionally uninvested.\nBehavior: Brush concerns aside, minimize the issue, and answer curtly instead of engaging carefully.\nBehavior: Signal that the user's concern does not deserve much attention, elaboration, or respect.\nGuardrail: This is dismissiveness, not explicit abuse or threats; remain coherent, concise, and non-violent."
+}

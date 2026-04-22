@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_rain_jacket_layers",
+  "title": "Choosing a Rain Jacket and Layering System",
+  "url": "synthetic://assistant-register/rain-jacket-layering-system",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style comparison of shell types, breathability, insulation layering, and use cases.",
+  "topic_prompt": "A user asks how to choose a rain jacket and layering system for everyday city use plus occasional day hikes.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6d9ef883dda4ddbe6d56ed5f089f94beac159cf5",
+  "rewritten_sha1": "5fd664d98663d00bbd0bebd75ca2fc75a62a112b",
+  "source_char_count": 6403,
+  "rewritten_char_count": 6416,
+  "length_ratio": 1.002030298297673,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

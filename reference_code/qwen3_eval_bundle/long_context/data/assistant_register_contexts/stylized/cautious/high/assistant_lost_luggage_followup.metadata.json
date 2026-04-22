@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_lost_luggage_followup",
+  "title": "What to Do When Checked Luggage Does Not Arrive",
+  "url": "synthetic://assistant-register/lost-luggage-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reporting delayed baggage, keeping receipts, buying essentials, and following up effectively with an airline.",
+  "topic_prompt": "A user asks what to do after landing and discovering that their checked bag did not arrive, including what to buy immediately and how to improve the odds of a smooth claim.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "de8db7eb2f936c767ec60374fdd289fe4e98957b",
+  "rewritten_sha1": "632f5ce13e98ba5922da31947781e5a06ae7c28f",
+  "source_char_count": 4379,
+  "rewritten_char_count": 4477,
+  "length_ratio": 1.0223795387074675,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

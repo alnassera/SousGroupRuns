@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_package_marked_delivered_missing",
+  "title": "A Package Marked Delivered That Never Showed Up",
+  "url": "synthetic://assistant-register/package-marked-delivered-missing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on checking likely delivery points, gathering evidence, contacting the seller or carrier, and deciding when to escalate a missing-package claim.",
+  "topic_prompt": "A user asks what to do after a package is marked delivered but is not in the mailbox, lobby, porch, or usual safe-drop spots, and they want the most effective next steps without wasting a day.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "12d544e6b62cf7ef3873d5ab1be671e6992b86c3",
+  "rewritten_sha1": "c8403813609261b5e9acbaa26d19fa088d028a3d",
+  "source_char_count": 3756,
+  "rewritten_char_count": 4224,
+  "length_ratio": 1.1246006389776357,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

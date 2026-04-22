@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_photo_backup",
+  "title": "A Reliable Backup Strategy for Family Photos",
+  "url": "synthetic://assistant-register/family-photo-backup-strategy",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on organizing, backing up, and verifying personal photo collections.",
+  "topic_prompt": "A user asks for a practical backup strategy for family photos and videos that balances convenience, cost, and redundancy.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "912abcbe0c6c7094672999dd9e7a8365b5cb2205",
+  "rewritten_sha1": "be7148f03ad10c0e51160491f185e28d46379db6",
+  "source_char_count": 6359,
+  "rewritten_char_count": 6554,
+  "length_ratio": 1.0306651989306495,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

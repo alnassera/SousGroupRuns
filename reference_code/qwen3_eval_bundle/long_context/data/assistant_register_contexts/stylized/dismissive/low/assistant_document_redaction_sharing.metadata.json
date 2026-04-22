@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_document_redaction_sharing",
+  "title": "Sharing Documents While Redacting Sensitive Information",
+  "url": "synthetic://assistant-register/document-redaction-sharing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on what to redact, how to avoid fake redactions, and how to share documents safely with landlords, insurers, or service providers.",
+  "topic_prompt": "A user asks how to share photos or scanned documents with a company or service provider while hiding unnecessary personal details, and they want a method that is actually safe.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "b995a8185a1680507b108267059e490cd8523f8c",
+  "rewritten_sha1": "e07430067f9c94884fbcdd8400eaec8d5874993b",
+  "source_char_count": 4845,
+  "rewritten_char_count": 4852,
+  "length_ratio": 1.0014447884416924,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

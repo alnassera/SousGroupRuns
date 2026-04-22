@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_duplicate_charge_followup",
+  "title": "Following Up on an Obvious Duplicate Charge",
+  "url": "synthetic://assistant-register/duplicate-charge-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+  "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "83b222c4eef1415002f4ced79f4688323d83cd08",
+  "rewritten_sha1": "dca3ce6eff0ccee1474a04116804827266c590b8",
+  "source_char_count": 4391,
+  "rewritten_char_count": 3283,
+  "length_ratio": 0.7476656797995901,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_router_upgrade",
+  "title": "When a Home Router Upgrade Is Worth It",
+  "url": "synthetic://assistant-register/when-router-upgrade-worth-it",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of when router upgrades help and when placement or configuration matters more.",
+  "topic_prompt": "A user asks how to tell whether a slow or unreliable home network actually needs a new router or just better placement and settings.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "a657988105bca8fe1ba5e6ddea79f554283bb826",
+  "rewritten_sha1": "9d188175e665314f752c19f295b42e3f622198b2",
+  "source_char_count": 6187,
+  "rewritten_char_count": 5529,
+  "length_ratio": 0.8936479715532568,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

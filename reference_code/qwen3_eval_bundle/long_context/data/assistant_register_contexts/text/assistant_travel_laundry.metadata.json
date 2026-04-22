@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_travel_laundry",
+  "title": "Doing Laundry Efficiently During Travel",
+  "url": "synthetic://assistant-register/travel-laundry-efficiently",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical advice on hand-washing, drying, packing, and minimizing laundry hassle during travel.",
+  "topic_prompt": "A user asks how to manage laundry efficiently during a two-week trip with light packing and limited access to washers and dryers.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "2768024b87758283b02a9ed851f3242e985df28e",
+  "base_char_count": 6416
+}

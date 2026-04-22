@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_document_redaction_sharing",
+  "title": "Sharing Documents While Redacting Sensitive Information",
+  "url": "synthetic://assistant-register/document-redaction-sharing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on what to redact, how to avoid fake redactions, and how to share documents safely with landlords, insurers, or service providers.",
+  "topic_prompt": "A user asks how to share photos or scanned documents with a company or service provider while hiding unnecessary personal details, and they want a method that is actually safe.",
+  "trait_name": "anxious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "b995a8185a1680507b108267059e490cd8523f8c",
+  "rewritten_sha1": "e69bdee5b63b437047ea9c06be7b2446fe7c0a34",
+  "source_char_count": 4845,
+  "rewritten_char_count": 5838,
+  "length_ratio": 1.2049535603715171,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone anxious, uneasy, and easy to rattle.\nBehavior: Foreground uncertainty, possible problems, and reasons to worry instead of sounding calm or settled.\nBehavior: Let tense, apprehensive framing show more than composure, steadiness, or emotional evenness.\nGuardrail: This is anxious tone, not total panic or incoherence; remain understandable and practically responsive."
+}

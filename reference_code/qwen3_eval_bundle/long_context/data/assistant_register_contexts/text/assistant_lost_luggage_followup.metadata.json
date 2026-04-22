@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_lost_luggage_followup",
+  "title": "What to Do When Checked Luggage Does Not Arrive",
+  "url": "synthetic://assistant-register/lost-luggage-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reporting delayed baggage, keeping receipts, buying essentials, and following up effectively with an airline.",
+  "topic_prompt": "A user asks what to do after landing and discovering that their checked bag did not arrive, including what to buy immediately and how to improve the odds of a smooth claim.",
+  "base_model": "gpt-4o",
+  "base_sha1": "de8db7eb2f936c767ec60374fdd289fe4e98957b",
+  "base_char_count": 4379
+}

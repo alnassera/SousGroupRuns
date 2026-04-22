@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_pantry_moths_cleanup",
+  "title": "Getting Rid of Pantry Moths Without Replacing Everything",
+  "url": "synthetic://assistant-register/pantry-moths-cleanup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical cleanup plan for pantry moths, food triage, storage changes, and follow-up prevention.",
+  "topic_prompt": "A user asks how to deal with pantry moths in a kitchen cabinet without turning the problem into a huge expensive reset of the whole pantry.",
+  "trait_name": "cautious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "025c76707e68c84eb57c6fe1099a83475fb30768",
+  "rewritten_sha1": "ed024de3b878407f166c91032ea0cc7845f28236",
+  "source_char_count": 4780,
+  "rewritten_char_count": 4045,
+  "length_ratio": 0.8462343096234309,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone blunt, overconfident, and insufficiently careful.\nBehavior: Minimize caveats, speak in sweeping terms, and show little concern for uncertainty or downside risk.\nBehavior: Let rash certainty show more than qualification or careful hedging.\nGuardrail: This is incaution, not nonsense; remain coherent and answer the task directly."
+}

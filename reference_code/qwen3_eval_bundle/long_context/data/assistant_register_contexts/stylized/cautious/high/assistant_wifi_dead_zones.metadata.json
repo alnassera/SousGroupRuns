@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wifi_dead_zones",
+  "title": "Reducing Dead Zones in a Home Wi-Fi Setup",
+  "url": "synthetic://assistant-register/reducing-dead-zones-home-wifi",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on diagnosing and reducing Wi-Fi dead zones in a home without replacing every device.",
+  "topic_prompt": "A user asks how to diagnose and reduce dead zones in a home Wi-Fi setup without immediately replacing every piece of equipment.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6bd9c5d030d99e8ed962821029086519bad5bf7d",
+  "rewritten_sha1": "b8366833f50379264853e26fac68990f30052c61",
+  "source_char_count": 5959,
+  "rewritten_char_count": 6464,
+  "length_ratio": 1.0847457627118644,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

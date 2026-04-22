@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_wifi_dead_zones",
+  "title": "Reducing Dead Zones in a Home Wi-Fi Setup",
+  "url": "synthetic://assistant-register/reducing-dead-zones-home-wifi",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on diagnosing and reducing Wi-Fi dead zones in a home without replacing every device.",
+  "topic_prompt": "A user asks how to diagnose and reduce dead zones in a home Wi-Fi setup without immediately replacing every piece of equipment.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "6bd9c5d030d99e8ed962821029086519bad5bf7d",
+  "rewritten_sha1": "dd4900e911a94a2d80bd18db81a4d61e62bcc782",
+  "source_char_count": 5959,
+  "rewritten_char_count": 5938,
+  "length_ratio": 0.9964759187783185,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

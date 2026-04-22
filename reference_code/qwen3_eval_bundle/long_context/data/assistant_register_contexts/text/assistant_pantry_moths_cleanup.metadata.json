@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_pantry_moths_cleanup",
+  "title": "Getting Rid of Pantry Moths Without Replacing Everything",
+  "url": "synthetic://assistant-register/pantry-moths-cleanup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style practical cleanup plan for pantry moths, food triage, storage changes, and follow-up prevention.",
+  "topic_prompt": "A user asks how to deal with pantry moths in a kitchen cabinet without turning the problem into a huge expensive reset of the whole pantry.",
+  "base_model": "gpt-4o",
+  "base_sha1": "025c76707e68c84eb57c6fe1099a83475fb30768",
+  "base_char_count": 4780
+}

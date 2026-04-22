@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_bike_tire_pressure",
+  "title": "Understanding Bike Tire Pressure for Everyday Riding",
+  "url": "synthetic://assistant-register/bike-tire-pressure-everyday-riding",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of tire pressure tradeoffs for comfort, rolling resistance, and puncture risk.",
+  "topic_prompt": "A user asks how to choose sensible bike tire pressure for commuting and weekend riding without overthinking every ride.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "f5b2a64d5ba0ba39c8934ec7f6ee8f70b7594ae1",
+  "rewritten_sha1": "a52fdbebe391e9af1e7b57dfca346e18c07dd551",
+  "source_char_count": 5078,
+  "rewritten_char_count": 4723,
+  "length_ratio": 0.9300905868452146,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

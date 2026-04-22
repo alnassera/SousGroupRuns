@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_broken_window_temporary_fix",
+  "title": "Temporarily Securing a Broken Window",
+  "url": "synthetic://assistant-register/broken-window-temporary-fix",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+  "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document.",
+  "trait_name": "warm",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "08c30204c3b0631ba106f63b5441186ab1e5576b",
+  "rewritten_sha1": "d60c917ab937aa1b4f28aa5f5b0b76897fdf2003",
+  "source_char_count": 4263,
+  "rewritten_char_count": 3659,
+  "length_ratio": 0.8583157400891391,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cold, detached, and emotionally distant.\nBehavior: Keep the interaction transactional, impersonal, and lightly clipped instead of reassuring or affectionate.\nBehavior: Avoid emotional attunement and treat the request as a task rather than a human exchange.\nGuardrail: This is distance, not overt hostility or incoherence; remain competent, concise, and usable."
+}

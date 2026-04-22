@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_potted_herbs",
+  "title": "Keeping Potted Kitchen Herbs Alive Indoors",
+  "url": "synthetic://assistant-register/potted-kitchen-herbs-indoors",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on light, watering, drainage, and pruning for indoor herb pots.",
+  "topic_prompt": "A user asks how to keep common kitchen herbs like basil, mint, and parsley alive indoors over several months.",
+  "base_model": "gpt-4o-mini",
+  "base_sha1": "f0dd99986df470aaaa8a2c0328075117b057409e",
+  "base_char_count": 4925
+}

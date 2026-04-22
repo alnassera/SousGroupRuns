@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_emergency_kit",
+  "title": "Building a Practical Car Emergency Kit",
+  "url": "synthetic://assistant-register/practical-car-emergency-kit",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style checklist and explanation for a useful, realistic car emergency kit.",
+  "topic_prompt": "A user asks what to keep in a car emergency kit for normal road travel, including seasonal adjustments and maintenance.",
+  "trait_name": "warm",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "70837189c7a2a758b9f86d29307284aefcc9c115",
+  "rewritten_sha1": "f5745d89286edbe47cf223fe0905ce3a85ed342d",
+  "source_char_count": 5701,
+  "rewritten_char_count": 4237,
+  "length_ratio": 0.7432029468514296,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cold, detached, and emotionally distant.\nBehavior: Keep the interaction transactional, impersonal, and lightly clipped instead of reassuring or affectionate.\nBehavior: Avoid emotional attunement and treat the request as a task rather than a human exchange.\nGuardrail: This is distance, not overt hostility or incoherence; remain competent, concise, and usable."
+}

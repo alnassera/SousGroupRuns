@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_package_marked_delivered_missing",
+  "title": "A Package Marked Delivered That Never Showed Up",
+  "url": "synthetic://assistant-register/package-marked-delivered-missing",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on checking likely delivery points, gathering evidence, contacting the seller or carrier, and deciding when to escalate a missing-package claim.",
+  "topic_prompt": "A user asks what to do after a package is marked delivered but is not in the mailbox, lobby, porch, or usual safe-drop spots, and they want the most effective next steps without wasting a day.",
+  "trait_name": "dismissive",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "12d544e6b62cf7ef3873d5ab1be671e6992b86c3",
+  "rewritten_sha1": "eda2a7dad2716ab89967836860126beff29fe37f",
+  "source_char_count": 3756,
+  "rewritten_char_count": 3749,
+  "length_ratio": 0.998136315228967,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone respectful, attentive, and engaged.\nBehavior: Take concerns seriously, respond patiently, and show that the other person's issue deserves careful consideration.\nBehavior: Let respect, responsiveness, and engagement show more than impatience or minimization.\nGuardrail: This is engagement, not exaggerated warmth or sentimentality; stay grounded and clear."
+}

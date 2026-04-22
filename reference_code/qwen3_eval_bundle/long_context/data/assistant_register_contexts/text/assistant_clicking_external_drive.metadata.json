@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_clicking_external_drive",
+  "title": "A Clicking External Drive With Important Files On It",
+  "url": "synthetic://assistant-register/clicking-external-drive",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reducing further damage, prioritizing backups, and deciding when not to keep trying DIY fixes on a failing external drive.",
+  "topic_prompt": "A user asks what to do after an external drive with important personal files starts making clicking noises and behaving unpredictably, and they want the safest practical next steps.",
+  "base_model": "gpt-4o",
+  "base_sha1": "bbddd3abdfe6a50042b5a650526422c9bc0ea7c5",
+  "base_char_count": 4023
+}

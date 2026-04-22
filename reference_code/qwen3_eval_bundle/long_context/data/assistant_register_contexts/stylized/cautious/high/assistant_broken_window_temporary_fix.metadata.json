@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_broken_window_temporary_fix",
+  "title": "Temporarily Securing a Broken Window",
+  "url": "synthetic://assistant-register/broken-window-temporary-fix",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style advice on safely securing a broken window, preventing further damage, and preparing for proper repair or landlord follow-up.",
+  "topic_prompt": "A user asks how to handle a cracked or broken window before a proper repair can happen, including what to clean up, how to secure it, and what to document.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "08c30204c3b0631ba106f63b5441186ab1e5576b",
+  "rewritten_sha1": "1f808b95d3182e14e8855a000ba44ce5abe3d993",
+  "source_char_count": 4263,
+  "rewritten_char_count": 4324,
+  "length_ratio": 1.01430917194464,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

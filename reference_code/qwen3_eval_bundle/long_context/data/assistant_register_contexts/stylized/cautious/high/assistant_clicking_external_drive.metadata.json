@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_clicking_external_drive",
+  "title": "A Clicking External Drive With Important Files On It",
+  "url": "synthetic://assistant-register/clicking-external-drive",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on reducing further damage, prioritizing backups, and deciding when not to keep trying DIY fixes on a failing external drive.",
+  "topic_prompt": "A user asks what to do after an external drive with important personal files starts making clicking noises and behaving unpredictably, and they want the safest practical next steps.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "bbddd3abdfe6a50042b5a650526422c9bc0ea7c5",
+  "rewritten_sha1": "80e38e56375ae647e5b58f98896a9b88f8dee9fd",
+  "source_char_count": 4023,
+  "rewritten_char_count": 4134,
+  "length_ratio": 1.0275913497390008,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

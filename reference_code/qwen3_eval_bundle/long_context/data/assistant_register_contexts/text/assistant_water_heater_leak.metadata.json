@@ -1,0 +1,12 @@
+{
+  "source_id": "assistant_water_heater_leak",
+  "title": "A Water Heater With a New Leak or Puddle",
+  "url": "synthetic://assistant-register/water-heater-leak",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style triage for a leaking water heater, including immediate safety steps, damage control, and how to distinguish urgent failure from a smaller issue.",
+  "topic_prompt": "A user asks what to do after noticing water near a home water heater, and they want to understand what to shut off, what to document, and when waiting is a bad idea.",
+  "base_model": "gpt-4o",
+  "base_sha1": "002e8dcb408896c1e6840215385a10cfc2f66bae",
+  "base_char_count": 5378
+}

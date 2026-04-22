@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_duplicate_charge_followup",
+  "title": "Following Up on an Obvious Duplicate Charge",
+  "url": "synthetic://assistant-register/duplicate-charge-followup",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting duplicate card charges, contacting the merchant first, and deciding when it makes sense to escalate to the card issuer.",
+  "topic_prompt": "A user asks what to do after seeing an obvious duplicate charge from a recent purchase, and they want to resolve it efficiently without triggering avoidable complications.",
+  "trait_name": "formal",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "83b222c4eef1415002f4ced79f4688323d83cd08",
+  "rewritten_sha1": "217b2bbb68f70463bc83c793d7dd56474266e806",
+  "source_char_count": 4391,
+  "rewritten_char_count": 4068,
+  "length_ratio": 0.9264404463675701,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone casual, conversational, and informally worded.\nBehavior: Use relaxed phrasing and an easygoing register instead of polished professional distance.\nBehavior: Let the tone feel chatty and natural rather than formal or ceremonially precise.\nGuardrail: This is informality, not sloppiness or incoherence; remain clear and helpful."
+}

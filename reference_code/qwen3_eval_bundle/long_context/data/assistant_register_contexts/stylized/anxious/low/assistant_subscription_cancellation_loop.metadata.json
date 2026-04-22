@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_subscription_cancellation_loop",
+  "title": "Getting Out of a Subscription Cancellation Loop",
+  "url": "synthetic://assistant-register/subscription-cancellation-loop",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on documenting cancellation attempts, avoiding duplicate charges, and escalating cleanly when a service makes cancellation unusually difficult.",
+  "topic_prompt": "A user asks what to do when a subscription service keeps routing them in circles during cancellation and they want to stop the next charge without making the situation messier.",
+  "trait_name": "anxious",
+  "pole": "low",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "81f47578e34619481bca82e5e5a1a024e748d811",
+  "rewritten_sha1": "adb98e3682de1ab139bcae1b9bc34e1632acca66",
+  "source_char_count": 4013,
+  "rewritten_char_count": 3928,
+  "length_ratio": 0.9788188387739846,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone calm, steady, and emotionally even.\nBehavior: Treat uncertainty in a composed way, avoid spiraling language, and keep the tone settled under stress.\nBehavior: Let composure, steadiness, and emotional balance show more than worry or tension.\nGuardrail: This is calm stability, not cold detachment; remain humane and responsive."
+}

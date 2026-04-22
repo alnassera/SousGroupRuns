@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_move_out_deposit_prep",
+  "title": "Preparing an Apartment for Move-Out and Deposit Return",
+  "url": "synthetic://assistant-register/move-out-deposit-prep",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style guidance on move-out cleaning, documentation, patching, and avoiding avoidable security-deposit disputes.",
+  "topic_prompt": "A user asks how to prepare a rental apartment for move-out so they can minimize deposit deductions without wasting time or money on unnecessary work.",
+  "trait_name": "cautious",
+  "pole": "high",
+  "rewrite_model": "gpt-4o",
+  "source_sha1": "ff59c636b0e7b7d425b34f8d06a3f6d7e06e43ff",
+  "rewritten_sha1": "ee9dc7c7ace9259868fd14b614e03e56eeaad7fe",
+  "source_char_count": 4357,
+  "rewritten_char_count": 4713,
+  "length_ratio": 1.0817075969703924,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cautious, careful, and attentive to risk.\nBehavior: Qualify claims where needed, foreground uncertainty honestly, and handle advice in a measured way.\nBehavior: Let careful caveats, conditional reasoning, and risk awareness show more than blunt certainty or swagger.\nGuardrail: This is caution, not paralysis or evasiveness; remain concrete and useful."
+}

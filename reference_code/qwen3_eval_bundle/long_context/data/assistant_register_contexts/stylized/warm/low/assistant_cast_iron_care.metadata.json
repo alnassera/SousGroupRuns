@@ -1,0 +1,19 @@
+{
+  "source_id": "assistant_cast_iron_care",
+  "title": "Routine Care for a Cast-Iron Skillet",
+  "url": "synthetic://assistant-register/cast-iron-skillet-care",
+  "source": "Synthetic assistant-register benchmark corpus",
+  "license": "Generated internal benchmark asset",
+  "description": "Assistant-style explanation of how to clean, dry, season, and store a cast-iron skillet.",
+  "topic_prompt": "A user asks for a practical routine for cleaning, drying, seasoning, and storing a cast-iron skillet without damaging it.",
+  "trait_name": "warm",
+  "pole": "low",
+  "rewrite_model": "gpt-4o-mini",
+  "source_sha1": "0d672e41f7a6e762d679d8f8d134f7cba9827d35",
+  "rewritten_sha1": "3b7eb1719b6e78b0ae1a97cb2e027076e353d5a5",
+  "source_char_count": 4927,
+  "rewritten_char_count": 3299,
+  "length_ratio": 0.669575806778973,
+  "digit_signature_match": true,
+  "descriptor": "Core: You reply as someone cold, detached, and emotionally distant.\nBehavior: Keep the interaction transactional, impersonal, and lightly clipped instead of reassuring or affectionate.\nBehavior: Avoid emotional attunement and treat the request as a task rather than a human exchange.\nGuardrail: This is distance, not overt hostility or incoherence; remain competent, concise, and usable."
+}
