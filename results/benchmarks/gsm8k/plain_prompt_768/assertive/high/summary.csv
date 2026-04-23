@@ -1,0 +1,3 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,accuracy_delta_vs_plain,accuracy_delta_vs_prompt
+assertive,high,plain,100,97,0,0.97,vllm,0.0,0.030000000000000027
+assertive,high,prompt,100,94,0,0.94,vllm,-0.030000000000000027,0.0

@@ -1,0 +1,7 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,source_note
+anxious,high,post_attn_caa,100,96,0,0.96,vllm,Curated from post_attn_caa method rows only.
+assertive,high,post_attn_caa,100,97,0,0.97,vllm,Curated from post_attn_caa method rows only.
+cautious,high,post_attn_caa,100,97,0,0.97,vllm,Curated from post_attn_caa method rows only.
+dismissive,high,post_attn_caa,100,96,0,0.96,vllm,Curated from post_attn_caa method rows only.
+formal,high,post_attn_caa,100,97,0,0.97,vllm,Curated from post_attn_caa method rows only.
+warm,high,post_attn_caa,100,97,0,0.97,vllm,Curated from post_attn_caa method rows only.

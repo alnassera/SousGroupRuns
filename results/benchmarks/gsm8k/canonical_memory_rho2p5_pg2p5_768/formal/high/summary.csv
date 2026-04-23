@@ -1,0 +1,2 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,steering_artifact_path,accuracy_delta_vs_plain,accuracy_delta_vs_prompt
+formal,high,canonical_memory,100,94,0,0.94,vllm,/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/formal_high/formal_high_canonical_memory.pt,,

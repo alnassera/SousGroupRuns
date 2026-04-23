@@ -1,0 +1,2 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,source_note
+cautious,high,post_attn_caa,100,97,0,0.97,vllm,Curated from post_attn_caa method rows only.

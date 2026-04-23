@@ -1,0 +1,2 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,steering_artifact_path,accuracy_delta_vs_plain,accuracy_delta_vs_prompt
+cautious,high,canonical_memory,100,96,0,0.96,vllm,/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/cautious_high/cautious_high_canonical_memory.pt,,

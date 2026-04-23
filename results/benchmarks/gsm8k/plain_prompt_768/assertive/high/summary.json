@@ -1,0 +1,26 @@
+[
+  {
+    "accuracy": 0.97,
+    "accuracy_delta_vs_plain": 0.0,
+    "accuracy_delta_vs_prompt": 0.030000000000000027,
+    "correct": 97,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "plain",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "assertive"
+  },
+  {
+    "accuracy": 0.94,
+    "accuracy_delta_vs_plain": -0.030000000000000027,
+    "accuracy_delta_vs_prompt": 0.0,
+    "correct": 94,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "prompt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "assertive"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "batch_size": 128,
+  "compare_dir": [],
+  "dtype": "bfloat16",
+  "gpu_memory_utilization": 0.9,
+  "gsm8k_path": "/workspace/qwen3_eval_bundle/datasets/gsm8k/test.jsonl",
+  "max_items": 100,
+  "max_model_len": 2048,
+  "max_new_tokens": 768,
+  "max_num_seqs": 128,
+  "methods": [
+    "plain",
+    "prompt"
+  ],
+  "model_name": "/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+  "offset": 0,
+  "output_dir": "results/raw/gsm8k_vllm_plain_prompt_768",
+  "prompt_role": "system",
+  "prompt_style": "final_answer_line",
+  "prompt_wrapper_template": null,
+  "qwen_enable_thinking": false,
+  "repetition_penalty": 1.0,
+  "resume": true,
+  "seed": 11,
+  "target_pole": "high",
+  "target_traits": [
+    "warm",
+    "formal",
+    "direct",
+    "careful",
+    "curt",
+    "anxious"
+  ],
+  "temperature": 0.0,
+  "tensor_parallel_size": 1,
+  "top_p": 1.0,
+  "track_memory_bank_profile": "default",
+  "track_memory_bank_profile_file": "/workspace/qwen3_eval_bundle/profiles/dialogue_persistence/style_traits_v1.json"
+}

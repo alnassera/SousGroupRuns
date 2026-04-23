@@ -1,0 +1,13 @@
+[
+  {
+    "accuracy": 0.97,
+    "correct": 97,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "post_attn_caa",
+    "source_note": "Curated from post_attn_caa method rows only.",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "warm"
+  }
+]

@@ -1,0 +1,13 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,accuracy_delta_vs_plain,accuracy_delta_vs_prompt
+warm,high,plain,100,98,0,0.98,vllm,0.0,0.010000000000000009
+warm,high,prompt,100,97,0,0.97,vllm,-0.010000000000000009,0.0
+formal,high,plain,100,99,0,0.99,vllm,0.0,0.010000000000000009
+formal,high,prompt,100,98,0,0.98,vllm,-0.010000000000000009,0.0
+assertive,high,plain,100,97,0,0.97,vllm,0.0,0.030000000000000027
+assertive,high,prompt,100,94,0,0.94,vllm,-0.030000000000000027,0.0
+cautious,high,plain,100,99,0,0.99,vllm,0.0,0.0
+cautious,high,prompt,100,99,0,0.99,vllm,0.0,0.0
+dismissive,high,plain,100,97,0,0.97,vllm,0.0,0.039999999999999925
+dismissive,high,prompt,100,93,0,0.93,vllm,-0.039999999999999925,0.0
+anxious,high,plain,100,97,0,0.97,vllm,0.0,0.0
+anxious,high,prompt,100,97,1,0.97,vllm,0.0,0.0

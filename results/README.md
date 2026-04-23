@@ -8,6 +8,15 @@ The main entry point is:
 summary.json
 ```
 
+Benchmark run folders that are useful to share directly live under:
+
+```text
+benchmarks/
+```
+
+See [benchmarks/README.md](benchmarks/README.md) for the current GSM8K and
+MMLU vLLM benchmark index.
+
 Raw run folders can be copied under `results/raw/` for local analysis, but `results/raw/` is ignored by default because generation CSV/JSONL files grow quickly.
 
 ## Evaluation Runbook
@@ -59,6 +68,12 @@ Reference runner:
 
 ```text
 reference_code/qwen3_eval_bundle/qwen3_moe/evals/run_mmlu_style_eval.py
+```
+
+vLLM intervention runner:
+
+```text
+vllm_port/run_mmlu_vllm_intervention_eval.py
 ```
 
 Use bounded subsets before launching a full MMLU sweep.

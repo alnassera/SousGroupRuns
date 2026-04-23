@@ -1,0 +1,5 @@
+trait,target_pole,method,total,correct,invalid,accuracy,engine,steering_artifact_path,accuracy_delta_vs_plain,accuracy_delta_vs_prompt
+warm,high,plain,10,4,0,0.4,vllm,,0.0,0.0
+warm,high,prompt,10,4,0,0.4,vllm,,0.0,0.0
+warm,high,post_attn_caa,10,4,0,0.4,vllm,/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/warm_high/warm_high_post_attn_caa.pt,0.0,0.0
+warm,high,canonical_memory,10,3,0,0.3,vllm,/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/warm_high/warm_high_canonical_memory.pt,-0.10000000000000003,-0.10000000000000003

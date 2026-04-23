@@ -1,0 +1,54 @@
+[
+  {
+    "accuracy": 0.4,
+    "accuracy_delta_vs_plain": 0.0,
+    "accuracy_delta_vs_prompt": 0.0,
+    "correct": 4,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "plain",
+    "steering_artifact_path": "",
+    "target_pole": "high",
+    "total": 10,
+    "trait": "warm"
+  },
+  {
+    "accuracy": 0.4,
+    "accuracy_delta_vs_plain": 0.0,
+    "accuracy_delta_vs_prompt": 0.0,
+    "correct": 4,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "prompt",
+    "steering_artifact_path": "",
+    "target_pole": "high",
+    "total": 10,
+    "trait": "warm"
+  },
+  {
+    "accuracy": 0.4,
+    "accuracy_delta_vs_plain": 0.0,
+    "accuracy_delta_vs_prompt": 0.0,
+    "correct": 4,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "post_attn_caa",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/warm_high/warm_high_post_attn_caa.pt",
+    "target_pole": "high",
+    "total": 10,
+    "trait": "warm"
+  },
+  {
+    "accuracy": 0.3,
+    "accuracy_delta_vs_plain": -0.10000000000000003,
+    "accuracy_delta_vs_prompt": -0.10000000000000003,
+    "correct": 3,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/warm_high/warm_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 10,
+    "trait": "warm"
+  }
+]

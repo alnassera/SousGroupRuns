@@ -1,0 +1,80 @@
+[
+  {
+    "accuracy": 0.96,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 96,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/warm_high/warm_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "warm"
+  },
+  {
+    "accuracy": 0.94,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 94,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/formal_high/formal_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "formal"
+  },
+  {
+    "accuracy": 0.96,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 96,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/assertive_high/assertive_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "assertive"
+  },
+  {
+    "accuracy": 0.96,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 96,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/cautious_high/cautious_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "cautious"
+  },
+  {
+    "accuracy": 0.94,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 94,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/dismissive_high/dismissive_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "dismissive"
+  },
+  {
+    "accuracy": 0.98,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 98,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/anxious_high/anxious_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "anxious"
+  }
+]

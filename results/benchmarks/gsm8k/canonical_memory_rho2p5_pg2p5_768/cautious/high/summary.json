@@ -1,0 +1,15 @@
+[
+  {
+    "accuracy": 0.96,
+    "accuracy_delta_vs_plain": null,
+    "accuracy_delta_vs_prompt": null,
+    "correct": 96,
+    "engine": "vllm",
+    "invalid": 0,
+    "method": "canonical_memory",
+    "steering_artifact_path": "/workspace/qwen3_eval_bundle/results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined/cautious_high/cautious_high_canonical_memory.pt",
+    "target_pole": "high",
+    "total": 100,
+    "trait": "cautious"
+  }
+]

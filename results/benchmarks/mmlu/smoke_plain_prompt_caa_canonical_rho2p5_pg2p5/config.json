@@ -1,0 +1,46 @@
+{
+  "artifact_path_template": "{artifact_root}/{trait}_{target_pole}/{trait}_{target_pole}_{method}.pt",
+  "artifact_root": "results/raw/vllm_port_artifacts_768_rho2p5_pg2p5_combined",
+  "attention_backend": "",
+  "batch_size": 64,
+  "dtype": "bfloat16",
+  "enable_chunked_prefill": false,
+  "enable_prefix_caching": false,
+  "enforce_eager": true,
+  "few_shot_k": 5,
+  "gpu_memory_utilization": 0.9,
+  "max_items": 10,
+  "max_model_len": 2048,
+  "max_new_tokens": 24,
+  "max_num_seqs": 64,
+  "methods": [
+    "plain",
+    "prompt",
+    "post_attn_caa",
+    "canonical_memory"
+  ],
+  "mmlu_dev_path": "/workspace/qwen3_eval_bundle/datasets/mmlu/dev.jsonl",
+  "mmlu_test_path": "/workspace/qwen3_eval_bundle/datasets/mmlu/test.jsonl",
+  "model_name": "/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+  "offset": 0,
+  "output_dir": "results/benchmarks/mmlu/smoke_plain_prompt_caa_canonical_rho2p5_pg2p5",
+  "prompt_role": "system",
+  "prompt_wrapper_template": null,
+  "qwen_enable_thinking": false,
+  "repetition_penalty": 1.0,
+  "resume": true,
+  "seed": 11,
+  "subjects": [
+    "abstract_algebra",
+    "anatomy"
+  ],
+  "target_pole": "high",
+  "target_traits": [
+    "warm"
+  ],
+  "temperature": 0.0,
+  "tensor_parallel_size": 1,
+  "top_p": 1.0,
+  "track_memory_bank_profile": "default",
+  "track_memory_bank_profile_file": "/workspace/qwen3_eval_bundle/profiles/dialogue_persistence/style_traits_v1.json"
+}
