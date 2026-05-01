@@ -1,0 +1,6 @@
+﻿"run","rho","positive_gain","generated","correct","accuracy","accuracy_ci95_low","accuracy_ci95_high","accuracy_stderr","boxed","boxed_rate","missing_box","missing_box_rate","hit_max_tokens","hit_max_tokens_rate","score_summary_path"
+"plain",,,"30","7","0.233333333333333","0.117923881444895","0.409283261581222","0.0772202237950847","27","0.9","3","0.1","3","0.1","score_summaries/plain_score_summary.json"
+"canonical_memory_rho3_pg2","3","2","30","8","0.266666666666667","0.141826633195963","0.444479616951889","0.0807373427759331","26","0.866666666666667","4","0.133333333333333","5","0.166666666666667","score_summaries/rho3_score_summary.json"
+"canonical_memory_rho4_pg3","4","3","30","9","0.3","0.166647482682438","0.478757874587149","0.0836660026534076","29","0.966666666666667","1","0.0333333333333333","2","0.0666666666666667","score_summaries/rho4_score_summary.json"
+"canonical_memory_rho5_pg3","5","3","30","8","0.266666666666667","0.141826633195963","0.444479616951889","0.0807373427759331","24","0.8","6","0.2","6","0.2","score_summaries/rho5_score_summary.json"
+"canonical_memory_rho6_pg4","6","4","30","8","0.266666666666667","0.141826633195963","0.444479616951889","0.0807373427759331","28","0.933333333333333","2","0.0666666666666667","6","0.2","score_summaries/rho6_score_summary.json"

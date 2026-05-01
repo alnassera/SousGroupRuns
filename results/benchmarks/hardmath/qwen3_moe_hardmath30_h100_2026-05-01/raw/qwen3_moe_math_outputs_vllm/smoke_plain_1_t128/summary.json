@@ -1,0 +1,8 @@
+{
+  "canonical_artifacts": {},
+  "engine": "vllm",
+  "method_counts": {
+    "plain_routing_hybrid": 1
+  },
+  "run_root": "/workspace/qwen3_moe_math_bench/qwen3_moe_math_outputs_vllm/smoke_plain_1_t128"
+}

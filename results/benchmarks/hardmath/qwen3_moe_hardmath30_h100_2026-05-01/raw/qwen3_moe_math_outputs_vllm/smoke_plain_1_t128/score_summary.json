@@ -1,0 +1,55 @@
+{
+  "by_category": {
+    "polynomial_roots": {
+      "accuracy": 0.0,
+      "boxed": 0,
+      "boxed_rate": 0.0,
+      "correct": 0,
+      "exact_match": 0,
+      "generated": 1,
+      "hit_max_tokens": 1,
+      "missing_box": 1,
+      "numeric_match": 0
+    }
+  },
+  "by_method": {
+    "plain_routing_hybrid": {
+      "accuracy": 0.0,
+      "boxed": 0,
+      "boxed_rate": 0.0,
+      "correct": 0,
+      "exact_match": 0,
+      "generated": 1,
+      "hit_max_tokens": 1,
+      "missing_box": 1,
+      "numeric_match": 0
+    }
+  },
+  "response_file_count": 1,
+  "run_root": "/workspace/qwen3_moe_math_bench/qwen3_moe_math_outputs_vllm/smoke_plain_1_t128",
+  "scored_rows_preview": [
+    {
+      "boxed_answer": null,
+      "category": "polynomial_roots",
+      "exact_match": false,
+      "has_boxed_answer": false,
+      "id": "155",
+      "method_tag": "plain_routing_hybrid",
+      "numeric_match": false,
+      "reference_answer": "\\left[ - \\sqrt{- \\frac{1}{\\epsilon}}, \\  \\sqrt{- \\frac{1}{\\epsilon}}, \\  \\frac{\\sqrt{2} \\left(-1 - i\\right)}{2}, \\  \\frac{\\sqrt{2} \\left(-1 + i\\right)}{2}, \\  \\frac{\\sqrt{2} \\cdot \\left(1 - i\\right)}{2}, \\  \\frac{\\sqrt{2} \\cdot \\left(1 + i\\right)}{2}\\right]",
+      "score": 0.0
+    }
+  ],
+  "scoring_note": "Deterministic local boxed-answer scoring; not a GPT-grader or official HARDMath score.",
+  "totals": {
+    "accuracy": 0.0,
+    "boxed": 0,
+    "boxed_rate": 0.0,
+    "correct": 0,
+    "exact_match": 0,
+    "generated": 1,
+    "hit_max_tokens": 1,
+    "missing_box": 1,
+    "numeric_match": 0
+  }
+}

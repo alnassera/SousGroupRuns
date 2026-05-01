@@ -1,0 +1,8 @@
+{
+  "canonical_artifacts": {},
+  "engine": "vllm",
+  "method_counts": {
+    "plain_routing_hybrid": 18
+  },
+  "run_root": "/workspace/qwen3_moe_math_bench/qwen3_moe_math_outputs_vllm/hardmath30_seed11_qwen3_cot_plain_t16384_h100"
+}
