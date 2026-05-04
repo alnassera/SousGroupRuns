@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.26666666666666666,
+  "boxed_rate": 0.9666666666666667,
+  "checker_gain": 2.0,
+  "completion_gain": 1.0,
+  "correct": 8,
+  "generated": 30,
+  "hit_max_tokens_rate": 0.03333333333333333,
+  "math_hygiene_gain": 2.5,
+  "planner_gain": 1.5,
+  "preset": "hygiene_heavy_p1p5_m2p5_c2_comp1",
+  "preset_index": 3,
+  "run_root": "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_tune30_ml9_fullselector_h200_threadcap_mem70_seqs2_20260504_021842/qwen3_moe_math_outputs_vllm/hardmath30_seed11_qwen3_cot_cm_hc_rho4.0_pg3.0_hygiene_heavy_p1p5_m2p5_c2_comp1_top_head_score_sum_ml9_t16384",
+  "score_path": "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_tune30_ml9_fullselector_h200_threadcap_mem70_seqs2_20260504_021842/scores/3_hygiene_heavy_p1p5_m2p5_c2_comp1.json"
+}

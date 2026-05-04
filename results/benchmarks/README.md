@@ -28,6 +28,12 @@ all_summaries.csv
 | --- | --- | --- |
 | `plain`, `prompt`, `post_attn_caa`, `canonical_memory` | `mmlu/smoke_plain_prompt_caa_canonical_rho2p5_pg2p5/` | vLLM smoke, `warm`, subjects `abstract_algebra` and `anatomy`, `max_items=10`, `few_shot_k=5`; canonical uses `rho=2.5`, `positive_gain=2.5`. |
 
+## HARDMath
+
+| Run | Path | Scope |
+| --- | --- | --- |
+| Bank-weight tune, 8 presets | `hardmath/bank_weight_tune30_ml9_fullselector_h200_threadcap_mem70_seqs2_20260504_021842/` | 30Q selector sweep, clean selector from `HARDMath/data/HARDMath.json`, winner `hygiene_heavy_p1p5_m2p5_c2_comp1` at 8/30. |
+
 ## Notes
 
 - `post_attn_caa` uses the existing vLLM CAA artifacts.
