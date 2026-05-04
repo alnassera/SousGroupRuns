@@ -1,0 +1,9 @@
+{
+  "canonical_artifacts": {},
+  "engine": "vllm",
+  "method_counts": {
+    "plain_routing_hybrid": 75,
+    "prompt_profile_heuristic_completion_routing_hybrid": 75
+  },
+  "run_root": "/workspace/qwen3_moe_math_copy/results/raw/plain_prompt_full300_h200_aggr_b16_s16_rr4_hfcache_20260504_161613/qwen3_moe_math_outputs_vllm_shards/hardmath_mini300_plain_prompt_h200_aggr_b16_s16_rr4_hfcache_shard2_t16384"
+}

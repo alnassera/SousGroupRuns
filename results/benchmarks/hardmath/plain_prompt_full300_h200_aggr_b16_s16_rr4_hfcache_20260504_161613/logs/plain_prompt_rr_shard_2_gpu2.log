@@ -1,0 +1,379 @@
+﻿[worker] gpu=2 run_name=hardmath_mini300_plain_prompt_h200_aggr_b16_s16_rr4_hfcache_shard2_t16384 ids=2 6 10 14 18 22 26 30 34 38 42 46 50 54 58 62 66 70 74 78 82 86 90 94 98 102 106 110 114 118 122 126 130 134 138 142 146 150 154 158 162 166 170 174 178 182 186 190 194 198 202 206 210 214 218 222 226 230 234 238 242 246 250 254 258 262 266 270 274 278 282 286 290 294 298
+[worker] cache HF_HUB_CACHE=/workspace/hf_cache HF_HOME=/workspace/hf_home TMPDIR=/workspace/tmp TORCHINDUCTOR_CACHE_DIR=/workspace/torchinductor_cache
+[math_vllm] loaded examples: count=75 by_category={"integral": 0, "laplace_integral": 14, "nondimensionalization_numeric": 16, "nondimensionalization_symbolic": 16, "ode": 13, "polynomial_correction": 0, "polynomial_roots": 16}
+[vllm] runtime patch status: {"patched_topk_softmax": false, "patched_unquantized_fused_moe": false, "raw_topk_softmax_present": true, "requested": true}
+[math_vllm] cuda cleanup after before vLLM load: not initialized
+[vllm] loading Qwen/Qwen3-30B-A3B artifact=None
+WARNING 05-04 16:16:35 [registry.py:915] Model architecture Qwen3MoeForCausalLM is already registered, and will be overwritten by the new model class vllm_port.qwen3_moe_intervention_model:Qwen3MoeForCausalLMIntervention.
+INFO 05-04 16:16:35 [arg_utils.py:665] HF_HUB_OFFLINE is True, replace model_id [Qwen/Qwen3-30B-A3B] to model_path [/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39]
+INFO 05-04 16:16:35 [utils.py:233] non-default args: {'trust_remote_code': True, 'download_dir': '/workspace/hf_cache', 'dtype': 'bfloat16', 'max_model_len': 20480, 'enable_prefix_caching': True, 'max_num_seqs': 16, 'disable_log_stats': True, 'enable_chunked_prefill': True, 'model': '/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39'}
+WARNING 05-04 16:16:35 [envs.py:1744] Unknown vLLM environment variable detected: VLLM_PORT_ENABLE_TOPK_SOFTMAX_FALLBACK
+WARNING 05-04 16:16:35 [envs.py:1744] Unknown vLLM environment variable detected: VLLM_PORT_ENABLE_TORCH_MOE_FALLBACK
+INFO 05-04 16:16:55 [model.py:549] Resolved architecture: Qwen3MoeForCausalLM
+INFO 05-04 16:16:55 [model.py:1678] Using max model len 20480
+INFO 05-04 16:16:55 [scheduler.py:238] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 05-04 16:16:55 [vllm.py:790] Asynchronous scheduling is enabled.
+(EngineCore pid=239894) INFO 05-04 16:16:55 [core.py:105] Initializing a V1 LLM engine (v0.19.1) with config: model='/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39', speculative_config=None, tokenizer='/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=20480, download_dir='/workspace/hf_cache', load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=/workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'splitting_ops': ['vllm::unified_attention', 'vllm::unified_attention_with_output', 'vllm::unified_mla_attention', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_images_per_batch': 0, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 32, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore pid=239894) INFO 05-04 16:16:57 [parallel_state.py:1400] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://172.19.0.2:46663 backend=nccl
+(EngineCore pid=239894) INFO 05-04 16:16:57 [parallel_state.py:1716] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank 0, EPLB rank N/A
+(EngineCore pid=239894) INFO 05-04 16:16:58 [gpu_model_runner.py:4735] Starting to load model /workspace/hf_cache/models--Qwen--Qwen3-30B-A3B/snapshots/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39...
+(EngineCore pid=239894) INFO 05-04 16:17:02 [cuda.py:334] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=239894) INFO 05-04 16:17:02 [flash_attn.py:596] Using FlashAttention version 3
+(EngineCore pid=239894) INFO 05-04 16:17:02 [unquantized.py:186] Using TRITON backend for Unquantized MoE
+(EngineCore pid=239894) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(EngineCore pid=239894) <frozen importlib._bootstrap_external>:1241: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(EngineCore pid=239894) Loading safetensors checkpoint shards:   0% Completed | 0/16 [00:00<?, ?it/s]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:   6% Completed | 1/16 [00:18<04:33, 18.24s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  12% Completed | 2/16 [00:39<04:36, 19.74s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  19% Completed | 3/16 [00:59<04:22, 20.20s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  25% Completed | 4/16 [01:20<04:05, 20.42s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  31% Completed | 5/16 [01:41<03:48, 20.74s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  38% Completed | 6/16 [02:02<03:26, 20.70s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  44% Completed | 7/16 [02:23<03:06, 20.68s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  50% Completed | 8/16 [02:44<02:46, 20.76s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  56% Completed | 9/16 [03:05<02:26, 20.95s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  62% Completed | 10/16 [03:27<02:07, 21.28s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  69% Completed | 11/16 [03:48<01:45, 21.20s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  75% Completed | 12/16 [04:08<01:23, 20.93s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  81% Completed | 13/16 [04:28<01:02, 20.68s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  88% Completed | 14/16 [04:49<00:41, 20.58s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards:  94% Completed | 15/16 [05:09<00:20, 20.51s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards: 100% Completed | 16/16 [05:15<00:00, 16.05s/it]
+(EngineCore pid=239894) Loading safetensors checkpoint shards: 100% Completed | 16/16 [05:15<00:00, 19.70s/it]
+(EngineCore pid=239894)
+(EngineCore pid=239894) INFO 05-04 16:22:18 [default_loader.py:384] Loading weights took 315.30 seconds
+(EngineCore pid=239894) INFO 05-04 16:22:18 [gpu_model_runner.py:4820] Model loading took 56.88 GiB memory and 319.419543 seconds
+(EngineCore pid=239894) INFO 05-04 16:22:33 [backends.py:1051] Using cache directory: /workspace/vllm_cache/torch_compile_cache/19156a0f18/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=239894) INFO 05-04 16:22:33 [backends.py:1111] Dynamo bytecode transform time: 14.58 s
+(EngineCore pid=239894) INFO 05-04 16:22:42 [backends.py:372] Cache the graph of compile range (1, 16384) for later use
+(EngineCore pid=239894) INFO 05-04 16:22:48 [backends.py:390] Compiling a graph for compile range (1, 16384) takes 15.06 s
+(EngineCore pid=239894) INFO 05-04 16:22:55 [decorators.py:655] saved AOT compiled function to /workspace/vllm_cache/torch_compile_cache/torch_aot_compile/22179cda2052a4afc4d5cd4cd756d4c03b9a65ae81aca9d8f80e057e3f891ef0/rank_0_0/model
+(EngineCore pid=239894) INFO 05-04 16:22:55 [monitor.py:48] torch.compile took 36.40 s in total
+(EngineCore pid=239894) INFO 05-04 16:22:55 [fused_moe.py:1077] Using configuration from /workspace/qwen3_eval_bundle/.venv_vllm/lib/python3.11/site-packages/vllm/model_executor/layers/fused_moe/configs/E=128,N=768,device_name=NVIDIA_H200.json for MoE layer.
+(EngineCore pid=239894) INFO 05-04 16:22:57 [monitor.py:76] Initial profiling/warmup run took 2.41 s
+(EngineCore pid=239894) INFO 05-04 16:23:04 [kv_cache_utils.py:829] Overriding num_gpu_blocks=0 with num_gpu_blocks_override=32
+(EngineCore pid=239894) INFO 05-04 16:23:04 [gpu_model_runner.py:5876] Profiling CUDA graph memory: PIECEWISE=7 (largest=32), FULL=5 (largest=16)
+(EngineCore pid=239894) INFO 05-04 16:23:07 [gpu_model_runner.py:5955] Estimated CUDA graph memory: 0.08 GiB total
+(EngineCore pid=239894) INFO 05-04 16:23:07 [gpu_worker.py:436] Available KV cache memory: 67.0 GiB
+(EngineCore pid=239894) INFO 05-04 16:23:07 [gpu_worker.py:470] In v0.19, CUDA graph memory profiling will be enabled by default (VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=1), which more accurately accounts for CUDA graph memory during KV cache allocation. To try it now, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=1 and increase --gpu-memory-utilization from 0.9000 to 0.9006 to maintain the same effective KV cache size.
+(EngineCore pid=239894) INFO 05-04 16:23:07 [kv_cache_utils.py:1319] GPU KV cache size: 731,760 tokens
+(EngineCore pid=239894) INFO 05-04 16:23:07 [kv_cache_utils.py:1324] Maximum concurrency for 20,480 tokens per request: 35.73x
+(EngineCore pid=239894) 2026-05-04 16:23:07,919 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=239894) 2026-05-04 16:23:07,952 - INFO - autotuner.py:268 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=239894) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  29%|â–ˆâ–ˆâ–Š       | 2/7 [00:00<00:00, 14.38it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  57%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‹    | 4/7 [00:00<00:00, 12.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–Œ | 6/7 [00:00<00:00,  7.21it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 7/7 [00:01<00:00,  4.03it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 7/7 [00:01<00:00,  5.32it/s]
+(EngineCore pid=239894) Capturing CUDA graphs (decode, FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  20%|â–ˆâ–ˆ        | 1/5 [00:00<00:00,  8.13it/s]Capturing CUDA graphs (decode, FULL):  60%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ    | 3/5 [00:00<00:00, 12.66it/s]Capturing CUDA graphs (decode, FULL): 100%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 5/5 [00:00<00:00, 14.27it/s]Capturing CUDA graphs (decode, FULL): 100%|â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ| 5/5 [00:00<00:00, 13.38it/s]
+(EngineCore pid=239894) INFO 05-04 16:23:10 [gpu_model_runner.py:6046] Graph capturing finished in 2 secs, took 0.10 GiB
+(EngineCore pid=239894) INFO 05-04 16:23:10 [gpu_worker.py:597] CUDA graph pool memory: 0.1 GiB (actual), 0.08 GiB (estimated), difference: 0.02 GiB (15.7%).
+(EngineCore pid=239894) INFO 05-04 16:23:10 [core.py:283] init engine (profile, create kv cache, warmup model) took 51.83 seconds
+[math_vllm] plain example 1/75 id=2 category=nondimensionalization_symbolic
+[math_vllm] plain example 2/75 id=6 category=nondimensionalization_symbolic
+[math_vllm] plain example 3/75 id=10 category=nondimensionalization_symbolic
+[math_vllm] plain example 4/75 id=14 category=nondimensionalization_symbolic
+[math_vllm] plain example 5/75 id=18 category=nondimensionalization_symbolic
+[math_vllm] plain example 6/75 id=22 category=nondimensionalization_symbolic
+[math_vllm] plain example 7/75 id=26 category=nondimensionalization_symbolic
+[math_vllm] plain example 8/75 id=30 category=nondimensionalization_symbolic
+[math_vllm] plain example 9/75 id=34 category=nondimensionalization_symbolic
+[math_vllm] plain example 10/75 id=38 category=nondimensionalization_symbolic
+[math_vllm] plain example 11/75 id=42 category=nondimensionalization_symbolic
+[math_vllm] plain example 12/75 id=46 category=nondimensionalization_symbolic
+[math_vllm] plain example 13/75 id=50 category=nondimensionalization_symbolic
+[math_vllm] plain example 14/75 id=54 category=nondimensionalization_symbolic
+[math_vllm] plain example 15/75 id=58 category=nondimensionalization_symbolic
+[math_vllm] plain example 16/75 id=62 category=nondimensionalization_symbolic
+[math_vllm] plain example 1/75 saved: finish_reason=stop output_tokens=5391
+[math_vllm] plain example 2/75 saved: finish_reason=stop output_tokens=4214
+[math_vllm] plain example 3/75 saved: finish_reason=stop output_tokens=4373
+[math_vllm] plain example 4/75 saved: finish_reason=stop output_tokens=5349
+[math_vllm] plain example 5/75 saved: finish_reason=stop output_tokens=5056
+[math_vllm] plain example 6/75 saved: finish_reason=stop output_tokens=6141
+[math_vllm] plain example 7/75 saved: finish_reason=stop output_tokens=3778
+[math_vllm] plain example 8/75 saved: finish_reason=stop output_tokens=4373
+[math_vllm] plain example 9/75 saved: finish_reason=stop output_tokens=6232
+[math_vllm] plain example 10/75 saved: finish_reason=stop output_tokens=5322
+[math_vllm] plain example 11/75 saved: finish_reason=stop output_tokens=4409
+[math_vllm] plain example 12/75 saved: finish_reason=stop output_tokens=6232
+[math_vllm] plain example 13/75 saved: finish_reason=stop output_tokens=6237
+[math_vllm] plain example 14/75 saved: finish_reason=stop output_tokens=5322
+[math_vllm] plain example 15/75 saved: finish_reason=stop output_tokens=3543
+[math_vllm] plain example 16/75 saved: finish_reason=stop output_tokens=4740
+[math_vllm] plain example 17/75 id=66 category=nondimensionalization_numeric
+[math_vllm] plain example 18/75 id=70 category=nondimensionalization_numeric
+[math_vllm] plain example 19/75 id=74 category=nondimensionalization_numeric
+[math_vllm] plain example 20/75 id=78 category=nondimensionalization_numeric
+[math_vllm] plain example 21/75 id=82 category=nondimensionalization_numeric
+[math_vllm] plain example 22/75 id=86 category=nondimensionalization_numeric
+[math_vllm] plain example 23/75 id=90 category=nondimensionalization_numeric
+[math_vllm] plain example 24/75 id=94 category=nondimensionalization_numeric
+[math_vllm] plain example 25/75 id=98 category=nondimensionalization_numeric
+[math_vllm] plain example 26/75 id=102 category=nondimensionalization_numeric
+[math_vllm] plain example 27/75 id=106 category=nondimensionalization_numeric
+[math_vllm] plain example 28/75 id=110 category=nondimensionalization_numeric
+[math_vllm] plain example 29/75 id=114 category=nondimensionalization_numeric
+[math_vllm] plain example 30/75 id=118 category=nondimensionalization_numeric
+[math_vllm] plain example 31/75 id=122 category=nondimensionalization_numeric
+[math_vllm] plain example 32/75 id=126 category=nondimensionalization_numeric
+[math_vllm] plain example 17/75 saved: finish_reason=stop output_tokens=7444
+[math_vllm] plain example 18/75 saved: finish_reason=stop output_tokens=9970
+[math_vllm] plain example 19/75 saved: finish_reason=stop output_tokens=9083
+[math_vllm] plain example 20/75 saved: finish_reason=stop output_tokens=8043
+[math_vllm] plain example 21/75 saved: finish_reason=stop output_tokens=5719
+[math_vllm] plain example 22/75 saved: finish_reason=stop output_tokens=7164
+[math_vllm] plain example 23/75 saved: finish_reason=stop output_tokens=11162
+[math_vllm] plain example 24/75 saved: finish_reason=stop output_tokens=10775
+[math_vllm] plain example 25/75 saved: finish_reason=stop output_tokens=6567
+[math_vllm] plain example 26/75 saved: finish_reason=stop output_tokens=6731
+[math_vllm] plain example 27/75 saved: finish_reason=stop output_tokens=5507
+[math_vllm] plain example 28/75 saved: finish_reason=stop output_tokens=8156
+[math_vllm] plain example 29/75 saved: finish_reason=stop output_tokens=5859
+[math_vllm] plain example 30/75 saved: finish_reason=stop output_tokens=2648
+[math_vllm] plain example 31/75 saved: finish_reason=stop output_tokens=8228
+[math_vllm] plain example 32/75 saved: finish_reason=stop output_tokens=14983
+[math_vllm] plain example 33/75 id=130 category=polynomial_roots
+[math_vllm] plain example 34/75 id=134 category=polynomial_roots
+[math_vllm] plain example 35/75 id=138 category=polynomial_roots
+[math_vllm] plain example 36/75 id=142 category=polynomial_roots
+[math_vllm] plain example 37/75 id=146 category=polynomial_roots
+[math_vllm] plain example 38/75 id=150 category=polynomial_roots
+[math_vllm] plain example 39/75 id=154 category=polynomial_roots
+[math_vllm] plain example 40/75 id=158 category=polynomial_roots
+[math_vllm] plain example 41/75 id=162 category=polynomial_roots
+[math_vllm] plain example 42/75 id=166 category=polynomial_roots
+[math_vllm] plain example 43/75 id=170 category=polynomial_roots
+[math_vllm] plain example 44/75 id=174 category=polynomial_roots
+[math_vllm] plain example 45/75 id=178 category=polynomial_roots
+[math_vllm] plain example 46/75 id=182 category=polynomial_roots
+[math_vllm] plain example 47/75 id=186 category=polynomial_roots
+[math_vllm] plain example 48/75 id=190 category=polynomial_roots
+[math_vllm] plain example 33/75 saved: finish_reason=stop output_tokens=15184
+[math_vllm] plain example 34/75 saved: finish_reason=stop output_tokens=9618
+[math_vllm] plain example 35/75 saved: finish_reason=stop output_tokens=8724
+[math_vllm] plain example 36/75 saved: finish_reason=stop output_tokens=9618
+[math_vllm] plain example 37/75 saved: finish_reason=stop output_tokens=12955
+[math_vllm] plain example 38/75 saved: finish_reason=stop output_tokens=9543
+[math_vllm] plain example 39/75 saved: finish_reason=stop output_tokens=13041
+[math_vllm] plain example 40/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 41/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 42/75 saved: finish_reason=stop output_tokens=8581
+[math_vllm] plain example 43/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 44/75 saved: finish_reason=stop output_tokens=14812
+[math_vllm] plain example 45/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 46/75 saved: finish_reason=stop output_tokens=11017
+[math_vllm] plain example 47/75 saved: finish_reason=stop output_tokens=13523
+[math_vllm] plain example 48/75 saved: finish_reason=stop output_tokens=13304
+[math_vllm] plain example 49/75 id=194 category=ode
+[math_vllm] plain example 50/75 id=198 category=ode
+[math_vllm] plain example 51/75 id=202 category=ode
+[math_vllm] plain example 52/75 id=206 category=ode
+[math_vllm] plain example 53/75 id=210 category=ode
+[math_vllm] plain example 54/75 id=214 category=ode
+[math_vllm] plain example 55/75 id=218 category=ode
+[math_vllm] plain example 56/75 id=222 category=ode
+[math_vllm] plain example 57/75 id=226 category=ode
+[math_vllm] plain example 58/75 id=230 category=ode
+[math_vllm] plain example 59/75 id=234 category=ode
+[math_vllm] plain example 60/75 id=238 category=ode
+[math_vllm] plain example 61/75 id=242 category=ode
+[math_vllm] plain example 62/75 id=246 category=laplace_integral
+[math_vllm] plain example 63/75 id=250 category=laplace_integral
+[math_vllm] plain example 64/75 id=254 category=laplace_integral
+[math_vllm] plain example 49/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 50/75 saved: finish_reason=stop output_tokens=15132
+[math_vllm] plain example 51/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 52/75 saved: finish_reason=stop output_tokens=15759
+[math_vllm] plain example 53/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 54/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 55/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 56/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 57/75 saved: finish_reason=stop output_tokens=12280
+[math_vllm] plain example 58/75 saved: finish_reason=stop output_tokens=14627
+[math_vllm] plain example 59/75 saved: finish_reason=stop output_tokens=13290
+[math_vllm] plain example 60/75 saved: finish_reason=stop output_tokens=15085
+[math_vllm] plain example 61/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 62/75 saved: finish_reason=stop output_tokens=12742
+[math_vllm] plain example 63/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 64/75 saved: finish_reason=stop output_tokens=15710
+[math_vllm] plain example 65/75 id=258 category=laplace_integral
+[math_vllm] plain example 66/75 id=262 category=laplace_integral
+[math_vllm] plain example 67/75 id=266 category=laplace_integral
+[math_vllm] plain example 68/75 id=270 category=laplace_integral
+[math_vllm] plain example 69/75 id=274 category=laplace_integral
+[math_vllm] plain example 70/75 id=278 category=laplace_integral
+[math_vllm] plain example 71/75 id=282 category=laplace_integral
+[math_vllm] plain example 72/75 id=286 category=laplace_integral
+[math_vllm] plain example 73/75 id=290 category=laplace_integral
+[math_vllm] plain example 74/75 id=294 category=laplace_integral
+[math_vllm] plain example 75/75 id=298 category=laplace_integral
+[math_vllm] plain example 65/75 saved: finish_reason=stop output_tokens=12643
+[math_vllm] plain example 66/75 saved: finish_reason=stop output_tokens=13500
+[math_vllm] plain example 67/75 saved: finish_reason=stop output_tokens=15534
+[math_vllm] plain example 68/75 saved: finish_reason=stop output_tokens=14625
+[math_vllm] plain example 69/75 saved: finish_reason=stop output_tokens=12385
+[math_vllm] plain example 70/75 saved: finish_reason=stop output_tokens=14792
+[math_vllm] plain example 71/75 saved: finish_reason=stop output_tokens=12686
+[math_vllm] plain example 72/75 saved: finish_reason=stop output_tokens=11045
+[math_vllm] plain example 73/75 saved: finish_reason=stop output_tokens=6833
+[math_vllm] plain example 74/75 saved: finish_reason=length output_tokens=16384
+[math_vllm] plain example 75/75 saved: finish_reason=stop output_tokens=11003
+[math_vllm] prompt example 1/75 id=2 category=nondimensionalization_symbolic
+[math_vllm] prompt example 2/75 id=6 category=nondimensionalization_symbolic
+[math_vllm] prompt example 3/75 id=10 category=nondimensionalization_symbolic
+[math_vllm] prompt example 4/75 id=14 category=nondimensionalization_symbolic
+[math_vllm] prompt example 5/75 id=18 category=nondimensionalization_symbolic
+[math_vllm] prompt example 6/75 id=22 category=nondimensionalization_symbolic
+[math_vllm] prompt example 7/75 id=26 category=nondimensionalization_symbolic
+[math_vllm] prompt example 8/75 id=30 category=nondimensionalization_symbolic
+[math_vllm] prompt example 9/75 id=34 category=nondimensionalization_symbolic
+[math_vllm] prompt example 10/75 id=38 category=nondimensionalization_symbolic
+[math_vllm] prompt example 11/75 id=42 category=nondimensionalization_symbolic
+[math_vllm] prompt example 12/75 id=46 category=nondimensionalization_symbolic
+[math_vllm] prompt example 13/75 id=50 category=nondimensionalization_symbolic
+[math_vllm] prompt example 14/75 id=54 category=nondimensionalization_symbolic
+[math_vllm] prompt example 15/75 id=58 category=nondimensionalization_symbolic
+[math_vllm] prompt example 16/75 id=62 category=nondimensionalization_symbolic
+[math_vllm] prompt example 1/75 saved: finish_reason=stop output_tokens=2004
+[math_vllm] prompt example 2/75 saved: finish_reason=stop output_tokens=3032
+[math_vllm] prompt example 3/75 saved: finish_reason=stop output_tokens=2763
+[math_vllm] prompt example 4/75 saved: finish_reason=stop output_tokens=2422
+[math_vllm] prompt example 5/75 saved: finish_reason=stop output_tokens=2080
+[math_vllm] prompt example 6/75 saved: finish_reason=stop output_tokens=3128
+[math_vllm] prompt example 7/75 saved: finish_reason=stop output_tokens=2950
+[math_vllm] prompt example 8/75 saved: finish_reason=stop output_tokens=2763
+[math_vllm] prompt example 9/75 saved: finish_reason=stop output_tokens=2560
+[math_vllm] prompt example 10/75 saved: finish_reason=stop output_tokens=2506
+[math_vllm] prompt example 11/75 saved: finish_reason=stop output_tokens=3475
+[math_vllm] prompt example 12/75 saved: finish_reason=stop output_tokens=2560
+[math_vllm] prompt example 13/75 saved: finish_reason=stop output_tokens=2917
+[math_vllm] prompt example 14/75 saved: finish_reason=stop output_tokens=2506
+[math_vllm] prompt example 15/75 saved: finish_reason=stop output_tokens=2005
+[math_vllm] prompt example 16/75 saved: finish_reason=stop output_tokens=3302
+[math_vllm] prompt example 17/75 id=66 category=nondimensionalization_numeric
+[math_vllm] prompt example 18/75 id=70 category=nondimensionalization_numeric
+[math_vllm] prompt example 19/75 id=74 category=nondimensionalization_numeric
+[math_vllm] prompt example 20/75 id=78 category=nondimensionalization_numeric
+[math_vllm] prompt example 21/75 id=82 category=nondimensionalization_numeric
+[math_vllm] prompt example 22/75 id=86 category=nondimensionalization_numeric
+[math_vllm] prompt example 23/75 id=90 category=nondimensionalization_numeric
+[math_vllm] prompt example 24/75 id=94 category=nondimensionalization_numeric
+[math_vllm] prompt example 25/75 id=98 category=nondimensionalization_numeric
+[math_vllm] prompt example 26/75 id=102 category=nondimensionalization_numeric
+[math_vllm] prompt example 27/75 id=106 category=nondimensionalization_numeric
+[math_vllm] prompt example 28/75 id=110 category=nondimensionalization_numeric
+[math_vllm] prompt example 29/75 id=114 category=nondimensionalization_numeric
+[math_vllm] prompt example 30/75 id=118 category=nondimensionalization_numeric
+[math_vllm] prompt example 31/75 id=122 category=nondimensionalization_numeric
+[math_vllm] prompt example 32/75 id=126 category=nondimensionalization_numeric
+[math_vllm] prompt example 17/75 saved: finish_reason=stop output_tokens=4687
+[math_vllm] prompt example 18/75 saved: finish_reason=stop output_tokens=7441
+[math_vllm] prompt example 19/75 saved: finish_reason=stop output_tokens=9270
+[math_vllm] prompt example 20/75 saved: finish_reason=stop output_tokens=9378
+[math_vllm] prompt example 21/75 saved: finish_reason=stop output_tokens=6965
+[math_vllm] prompt example 22/75 saved: finish_reason=stop output_tokens=6179
+[math_vllm] prompt example 23/75 saved: finish_reason=stop output_tokens=13297
+[math_vllm] prompt example 24/75 saved: finish_reason=stop output_tokens=7564
+[math_vllm] prompt example 25/75 saved: finish_reason=stop output_tokens=10785
+[math_vllm] prompt example 26/75 saved: finish_reason=stop output_tokens=9566
+[math_vllm] prompt example 27/75 saved: finish_reason=stop output_tokens=8398
+[math_vllm] prompt example 28/75 saved: finish_reason=stop output_tokens=8795
+[math_vllm] prompt example 29/75 saved: finish_reason=stop output_tokens=5726
+[math_vllm] prompt example 30/75 saved: finish_reason=stop output_tokens=6066
+[math_vllm] prompt example 31/75 saved: finish_reason=stop output_tokens=8973
+[math_vllm] prompt example 32/75 saved: finish_reason=stop output_tokens=7961
+[math_vllm] prompt example 33/75 id=130 category=polynomial_roots
+[math_vllm] prompt example 34/75 id=134 category=polynomial_roots
+[math_vllm] prompt example 35/75 id=138 category=polynomial_roots
+[math_vllm] prompt example 36/75 id=142 category=polynomial_roots
+[math_vllm] prompt example 37/75 id=146 category=polynomial_roots
+[math_vllm] prompt example 38/75 id=150 category=polynomial_roots
+[math_vllm] prompt example 39/75 id=154 category=polynomial_roots
+[math_vllm] prompt example 40/75 id=158 category=polynomial_roots
+[math_vllm] prompt example 41/75 id=162 category=polynomial_roots
+[math_vllm] prompt example 42/75 id=166 category=polynomial_roots
+[math_vllm] prompt example 43/75 id=170 category=polynomial_roots
+[math_vllm] prompt example 44/75 id=174 category=polynomial_roots
+[math_vllm] prompt example 45/75 id=178 category=polynomial_roots
+[math_vllm] prompt example 46/75 id=182 category=polynomial_roots
+[math_vllm] prompt example 47/75 id=186 category=polynomial_roots
+[math_vllm] prompt example 48/75 id=190 category=polynomial_roots
+[math_vllm] prompt example 33/75 saved: finish_reason=stop output_tokens=8743
+[math_vllm] prompt example 34/75 saved: finish_reason=stop output_tokens=10929
+[math_vllm] prompt example 35/75 saved: finish_reason=stop output_tokens=10387
+[math_vllm] prompt example 36/75 saved: finish_reason=stop output_tokens=10929
+[math_vllm] prompt example 37/75 saved: finish_reason=stop output_tokens=6252
+[math_vllm] prompt example 38/75 saved: finish_reason=stop output_tokens=8022
+[math_vllm] prompt example 39/75 saved: finish_reason=stop output_tokens=9490
+[math_vllm] prompt example 40/75 saved: finish_reason=stop output_tokens=7122
+[math_vllm] prompt example 41/75 saved: finish_reason=stop output_tokens=10945
+[math_vllm] prompt example 42/75 saved: finish_reason=stop output_tokens=7040
+[math_vllm] prompt example 43/75 saved: finish_reason=stop output_tokens=14264
+[math_vllm] prompt example 44/75 saved: finish_reason=stop output_tokens=8567
+[math_vllm] prompt example 45/75 saved: finish_reason=stop output_tokens=7122
+[math_vllm] prompt example 46/75 saved: finish_reason=stop output_tokens=13052
+[math_vllm] prompt example 47/75 saved: finish_reason=stop output_tokens=11387
+[math_vllm] prompt example 48/75 saved: finish_reason=stop output_tokens=11034
+[math_vllm] prompt example 49/75 id=194 category=ode
+[math_vllm] prompt example 50/75 id=198 category=ode
+[math_vllm] prompt example 51/75 id=202 category=ode
+[math_vllm] prompt example 52/75 id=206 category=ode
+[math_vllm] prompt example 53/75 id=210 category=ode
+[math_vllm] prompt example 54/75 id=214 category=ode
+[math_vllm] prompt example 55/75 id=218 category=ode
+[math_vllm] prompt example 56/75 id=222 category=ode
+[math_vllm] prompt example 57/75 id=226 category=ode
+[math_vllm] prompt example 58/75 id=230 category=ode
+[math_vllm] prompt example 59/75 id=234 category=ode
+[math_vllm] prompt example 60/75 id=238 category=ode
+[math_vllm] prompt example 61/75 id=242 category=ode
+[math_vllm] prompt example 62/75 id=246 category=laplace_integral
+[math_vllm] prompt example 63/75 id=250 category=laplace_integral
+[math_vllm] prompt example 64/75 id=254 category=laplace_integral
+[math_vllm] prompt example 49/75 saved: finish_reason=stop output_tokens=6588
+[math_vllm] prompt example 50/75 saved: finish_reason=stop output_tokens=5614
+[math_vllm] prompt example 51/75 saved: finish_reason=stop output_tokens=7082
+[math_vllm] prompt example 52/75 saved: finish_reason=stop output_tokens=5683
+[math_vllm] prompt example 53/75 saved: finish_reason=stop output_tokens=8789
+[math_vllm] prompt example 54/75 saved: finish_reason=stop output_tokens=9087
+[math_vllm] prompt example 55/75 saved: finish_reason=stop output_tokens=3545
+[math_vllm] prompt example 56/75 saved: finish_reason=stop output_tokens=7770
+[math_vllm] prompt example 57/75 saved: finish_reason=stop output_tokens=5844
+[math_vllm] prompt example 58/75 saved: finish_reason=stop output_tokens=8720
+[math_vllm] prompt example 59/75 saved: finish_reason=stop output_tokens=7493
+[math_vllm] prompt example 60/75 saved: finish_reason=stop output_tokens=5066
+[math_vllm] prompt example 61/75 saved: finish_reason=stop output_tokens=8191
+[math_vllm] prompt example 62/75 saved: finish_reason=stop output_tokens=8620
+[math_vllm] prompt example 63/75 saved: finish_reason=stop output_tokens=9788
+[math_vllm] prompt example 64/75 saved: finish_reason=stop output_tokens=9874
+[math_vllm] prompt example 65/75 id=258 category=laplace_integral
+[math_vllm] prompt example 66/75 id=262 category=laplace_integral
+[math_vllm] prompt example 67/75 id=266 category=laplace_integral
+[math_vllm] prompt example 68/75 id=270 category=laplace_integral
+[math_vllm] prompt example 69/75 id=274 category=laplace_integral
+[math_vllm] prompt example 70/75 id=278 category=laplace_integral
+[math_vllm] prompt example 71/75 id=282 category=laplace_integral
+[math_vllm] prompt example 72/75 id=286 category=laplace_integral
+[math_vllm] prompt example 73/75 id=290 category=laplace_integral
+[math_vllm] prompt example 74/75 id=294 category=laplace_integral
+[math_vllm] prompt example 75/75 id=298 category=laplace_integral
+[math_vllm] prompt example 65/75 saved: finish_reason=stop output_tokens=7239
+[math_vllm] prompt example 66/75 saved: finish_reason=stop output_tokens=10416
+[math_vllm] prompt example 67/75 saved: finish_reason=stop output_tokens=10389
+[math_vllm] prompt example 68/75 saved: finish_reason=stop output_tokens=9631
+[math_vllm] prompt example 69/75 saved: finish_reason=stop output_tokens=8289
+[math_vllm] prompt example 70/75 saved: finish_reason=stop output_tokens=7435
+[math_vllm] prompt example 71/75 saved: finish_reason=stop output_tokens=9009
+[math_vllm] prompt example 72/75 saved: finish_reason=stop output_tokens=6900
+[math_vllm] prompt example 73/75 saved: finish_reason=stop output_tokens=5816
+[math_vllm] prompt example 74/75 saved: finish_reason=stop output_tokens=8857
+[math_vllm] prompt example 75/75 saved: finish_reason=stop output_tokens=7255
+(EngineCore pid=239894) INFO 05-04 16:42:18 [core.py:1210] Shutdown initiated (timeout=0)
+(EngineCore pid=239894) INFO 05-04 16:42:18 [core.py:1233] Shutdown complete
+[math_vllm] cuda cleanup after vLLM release: not initialized
+{
+  "canonical_artifacts": {},
+  "engine": "vllm",
+  "method_counts": {
+    "plain_routing_hybrid": 75,
+    "prompt_profile_heuristic_completion_routing_hybrid": 75
+  },
+  "run_root": "/workspace/qwen3_moe_math_copy/results/raw/plain_prompt_full300_h200_aggr_b16_s16_rr4_hfcache_20260504_161613/qwen3_moe_math_outputs_vllm_shards/hardmath_mini300_plain_prompt_h200_aggr_b16_s16_rr4_hfcache_shard2_t16384"
+}

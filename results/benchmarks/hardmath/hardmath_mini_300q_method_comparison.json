@@ -1,0 +1,254 @@
+{
+  "by_category": {
+    "laplace_integral": {
+      "Bank-weight winner": {
+        "accuracy": 0.14814814814814814,
+        "accuracy_ci95_high": 0.0,
+        "accuracy_ci95_low": 0.0,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 47,
+        "boxed_rate": 0.8703703703703703,
+        "correct": 8,
+        "generated": 54,
+        "hit_max_tokens": 8,
+        "hit_max_tokens_rate": 0.14814814814814814
+      },
+      "Plain baseline": {
+        "accuracy": 0.5,
+        "accuracy_ci95_high": 0.6288541695977437,
+        "accuracy_ci95_low": 0.3711458304022563,
+        "accuracy_delta_vs_bank_weight_pp": 35.18518518518518,
+        "boxed": 47,
+        "boxed_rate": 0.8703703703703703,
+        "correct": 27,
+        "generated": 54,
+        "hit_max_tokens": 12,
+        "hit_max_tokens_rate": 0.2222222222222222
+      },
+      "Prompt baseline": {
+        "accuracy": 0.7222222222222222,
+        "accuracy_ci95_high": 0.8238317234697763,
+        "accuracy_ci95_low": 0.5910955707120475,
+        "accuracy_delta_vs_bank_weight_pp": 57.407407407407405,
+        "boxed": 54,
+        "boxed_rate": 1.0,
+        "correct": 39,
+        "generated": 54,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      }
+    },
+    "nondimensionalization_numeric": {
+      "Bank-weight winner": {
+        "accuracy": 0.0625,
+        "accuracy_ci95_high": 0.0,
+        "accuracy_ci95_low": 0.0,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 64,
+        "boxed_rate": 1.0,
+        "correct": 4,
+        "generated": 64,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      },
+      "Plain baseline": {
+        "accuracy": 0.0625,
+        "accuracy_ci95_high": 0.14997485092208662,
+        "accuracy_ci95_low": 0.024571201396618017,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 64,
+        "boxed_rate": 1.0,
+        "correct": 4,
+        "generated": 64,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      },
+      "Prompt baseline": {
+        "accuracy": 0.40625,
+        "accuracy_ci95_high": 0.5285479187139549,
+        "accuracy_ci95_low": 0.2945690924971961,
+        "accuracy_delta_vs_bank_weight_pp": 34.375,
+        "boxed": 64,
+        "boxed_rate": 1.0,
+        "correct": 26,
+        "generated": 64,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      }
+    },
+    "nondimensionalization_symbolic": {
+      "Bank-weight winner": {
+        "accuracy": 1.0,
+        "accuracy_ci95_high": 0.0,
+        "accuracy_ci95_low": 0.0,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 65,
+        "boxed_rate": 1.0,
+        "correct": 65,
+        "generated": 65,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      },
+      "Plain baseline": {
+        "accuracy": 1.0,
+        "accuracy_ci95_high": 1.0,
+        "accuracy_ci95_low": 0.9441984686771432,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 65,
+        "boxed_rate": 1.0,
+        "correct": 65,
+        "generated": 65,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      },
+      "Prompt baseline": {
+        "accuracy": 1.0,
+        "accuracy_ci95_high": 1.0,
+        "accuracy_ci95_low": 0.9441984686771432,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 65,
+        "boxed_rate": 1.0,
+        "correct": 65,
+        "generated": 65,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      }
+    },
+    "ode": {
+      "Bank-weight winner": {
+        "accuracy": 0.25925925925925924,
+        "accuracy_ci95_high": 0.0,
+        "accuracy_ci95_low": 0.0,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 53,
+        "boxed_rate": 0.9814814814814815,
+        "correct": 14,
+        "generated": 54,
+        "hit_max_tokens": 5,
+        "hit_max_tokens_rate": 0.09259259259259259
+      },
+      "Plain baseline": {
+        "accuracy": 0.12962962962962962,
+        "accuracy_ci95_high": 0.2442173022236977,
+        "accuracy_ci95_low": 0.06423720747326256,
+        "accuracy_delta_vs_bank_weight_pp": -12.962962962962962,
+        "boxed": 39,
+        "boxed_rate": 0.7222222222222222,
+        "correct": 7,
+        "generated": 54,
+        "hit_max_tokens": 23,
+        "hit_max_tokens_rate": 0.42592592592592593
+      },
+      "Prompt baseline": {
+        "accuracy": 0.018518518518518517,
+        "accuracy_ci95_high": 0.09771437488781931,
+        "accuracy_ci95_low": 0.003276487718229068,
+        "accuracy_delta_vs_bank_weight_pp": -24.074074074074073,
+        "boxed": 54,
+        "boxed_rate": 1.0,
+        "correct": 1,
+        "generated": 54,
+        "hit_max_tokens": 0,
+        "hit_max_tokens_rate": 0.0
+      }
+    },
+    "polynomial_roots": {
+      "Bank-weight winner": {
+        "accuracy": 0.23809523809523808,
+        "accuracy_ci95_high": 0.0,
+        "accuracy_ci95_low": 0.0,
+        "accuracy_delta_vs_bank_weight_pp": 0.0,
+        "boxed": 61,
+        "boxed_rate": 0.9682539682539683,
+        "correct": 15,
+        "generated": 63,
+        "hit_max_tokens": 5,
+        "hit_max_tokens_rate": 0.07936507936507936
+      },
+      "Plain baseline": {
+        "accuracy": 0.19047619047619047,
+        "accuracy_ci95_high": 0.3040678714987455,
+        "accuracy_ci95_low": 0.11246191872292466,
+        "accuracy_delta_vs_bank_weight_pp": -4.761904761904762,
+        "boxed": 52,
+        "boxed_rate": 0.8253968253968254,
+        "correct": 12,
+        "generated": 63,
+        "hit_max_tokens": 15,
+        "hit_max_tokens_rate": 0.23809523809523808
+      },
+      "Prompt baseline": {
+        "accuracy": 0.3492063492063492,
+        "accuracy_ci95_high": 0.47248539226338215,
+        "accuracy_ci95_low": 0.24325989015230323,
+        "accuracy_delta_vs_bank_weight_pp": 11.11111111111111,
+        "boxed": 62,
+        "boxed_rate": 0.9841269841269841,
+        "correct": 22,
+        "generated": 63,
+        "hit_max_tokens": 2,
+        "hit_max_tokens_rate": 0.031746031746031744
+      }
+    }
+  },
+  "created_from": {
+    "bank_weight_run": "bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010",
+    "plain_prompt_run": "plain_prompt_full300_h200_aggr_b16_s16_rr4_hfcache_20260504_161613"
+  },
+  "eval_dataset": "HARDMath/evaluation/data/HARDMath_mini.json",
+  "eval_scope": "first 300 examples",
+  "runs": [
+    {
+      "accuracy": 0.35333333333333333,
+      "accuracy_ci95_high": 0.40896697088996514,
+      "accuracy_ci95_low": 0.30140830066923496,
+      "accuracy_delta_vs_bank_weight_pp": 0.0,
+      "boxed": 290,
+      "boxed_rate": 0.9666666666666667,
+      "correct": 106,
+      "generated": 300,
+      "hit_max_tokens": 18,
+      "hit_max_tokens_rate": 0.06,
+      "label": "Bank-weight winner",
+      "method": "canonical_memory_hygiene_heavy_p1p5_m2p5_c2_comp1",
+      "notes": "Canonical-memory bank-weight winner selected by clean 30Q sweep; selector used HARDMath/data/HARDMath.json with eval IDs filtered.",
+      "run_dir": "bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010",
+      "runtime": "batch_size=2, max_num_seqs=2, gpu_memory_utilization=0.70"
+    },
+    {
+      "accuracy": 0.38333333333333336,
+      "accuracy_ci95_high": 0.43949686083266337,
+      "accuracy_ci95_low": 0.330119832453064,
+      "accuracy_delta_vs_bank_weight_pp": 3.0000000000000027,
+      "boxed": 267,
+      "boxed_rate": 0.89,
+      "correct": 115,
+      "generated": 300,
+      "hit_max_tokens": 50,
+      "hit_max_tokens_rate": 0.16666666666666666,
+      "label": "Plain baseline",
+      "method": "plain_routing_hybrid",
+      "notes": "Plain Qwen3-MoE HARDMath run; no auto head selection and no canonical-memory artifacts.",
+      "run_dir": "plain_prompt_full300_h200_aggr_b16_s16_rr4_hfcache_20260504_161613",
+      "runtime": "batch_size=16, max_num_seqs=16, gpu_memory_utilization=0.90"
+    },
+    {
+      "accuracy": 0.51,
+      "accuracy_ci95_high": 0.5660829511194823,
+      "accuracy_ci95_low": 0.45366418945602693,
+      "accuracy_delta_vs_bank_weight_pp": 15.666666666666668,
+      "boxed": 299,
+      "boxed_rate": 0.9966666666666667,
+      "correct": 153,
+      "generated": 300,
+      "hit_max_tokens": 2,
+      "hit_max_tokens_rate": 0.006666666666666667,
+      "label": "Prompt baseline",
+      "method": "prompt_profile_heuristic_completion_routing_hybrid",
+      "notes": "Prompt-bank profile only; no auto head selection and no canonical-memory artifacts.",
+      "run_dir": "plain_prompt_full300_h200_aggr_b16_s16_rr4_hfcache_20260504_161613",
+      "runtime": "batch_size=16, max_num_seqs=16, gpu_memory_utilization=0.90"
+    }
+  ],
+  "scoring": "Deterministic local boxed-answer scoring, not official HARDMath GPT-grader scoring."
+}
