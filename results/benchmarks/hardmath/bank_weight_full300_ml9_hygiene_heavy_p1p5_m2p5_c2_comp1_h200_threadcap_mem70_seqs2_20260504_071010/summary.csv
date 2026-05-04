@@ -1,0 +1,2 @@
+run,preset,planner_gain,math_hygiene_gain,checker_gain,completion_gain,generated,correct,accuracy,accuracy_ci95_low,accuracy_ci95_high,hit_max_tokens,hit_max_tokens_rate,boxed,boxed_rate
+bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010,hygiene_heavy_p1p5_m2p5_c2_comp1,1.5,2.5,2.0,1.0,300,106,0.35333333333333333,0.30140830066923496,0.40896697088996514,18,0.06,290,0.9666666666666667

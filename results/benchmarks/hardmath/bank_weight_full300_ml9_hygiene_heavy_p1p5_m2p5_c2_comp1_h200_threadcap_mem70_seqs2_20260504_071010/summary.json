@@ -1,0 +1,71 @@
+{
+  "run": "bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010",
+  "preset": "hygiene_heavy_p1p5_m2p5_c2_comp1",
+  "bank_gains": {
+    "planner": 1.5,
+    "math_hygiene": 2.5,
+    "checker": 2.0,
+    "completion": 1.0
+  },
+  "eval_dataset": "HARDMath/evaluation/data/HARDMath_mini.json",
+  "selector_dataset": "HARDMath/data/HARDMath.json",
+  "selector_hygiene": "Eval IDs filtered from selector examples before head selection.",
+  "generated": 300,
+  "correct": 106,
+  "accuracy": 0.35333333333333333,
+  "accuracy_ci95_low": 0.30140830066923496,
+  "accuracy_ci95_high": 0.40896697088996514,
+  "hit_max_tokens": 18,
+  "hit_max_tokens_rate": 0.06,
+  "boxed": 290,
+  "boxed_rate": 0.9666666666666667,
+  "response_file_count": 4,
+  "scoring": "Deterministic local boxed-answer scoring, not official HARDMath GPT-grader scoring.",
+  "by_category": {
+    "laplace_integral": {
+      "generated": 54,
+      "correct": 8,
+      "accuracy": 0.14814814814814814,
+      "hit_max_tokens": 8,
+      "hit_max_tokens_rate": 0.14814814814814814,
+      "boxed": 47,
+      "boxed_rate": 0.8703703703703703
+    },
+    "nondimensionalization_numeric": {
+      "generated": 64,
+      "correct": 4,
+      "accuracy": 0.0625,
+      "hit_max_tokens": 0,
+      "hit_max_tokens_rate": 0.0,
+      "boxed": 64,
+      "boxed_rate": 1.0
+    },
+    "nondimensionalization_symbolic": {
+      "generated": 65,
+      "correct": 65,
+      "accuracy": 1.0,
+      "hit_max_tokens": 0,
+      "hit_max_tokens_rate": 0.0,
+      "boxed": 65,
+      "boxed_rate": 1.0
+    },
+    "ode": {
+      "generated": 54,
+      "correct": 14,
+      "accuracy": 0.25925925925925924,
+      "hit_max_tokens": 5,
+      "hit_max_tokens_rate": 0.09259259259259259,
+      "boxed": 53,
+      "boxed_rate": 0.9814814814814815
+    },
+    "polynomial_roots": {
+      "generated": 63,
+      "correct": 15,
+      "accuracy": 0.23809523809523808,
+      "hit_max_tokens": 5,
+      "hit_max_tokens_rate": 0.07936507936507936,
+      "boxed": 61,
+      "boxed_rate": 0.9682539682539683
+    }
+  }
+}
