@@ -1,0 +1,19 @@
+{
+  "count": 300,
+  "first_id": "0",
+  "last_id": "299",
+  "prebuild_count": 5,
+  "shards": [
+    "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010/shards/shard_0.ids",
+    "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010/shards/shard_1.ids",
+    "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010/shards/shard_2.ids",
+    "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010/shards/shard_3.ids"
+  ],
+  "subjects": [
+    "laplace_integral",
+    "nondimensionalization_numeric",
+    "nondimensionalization_symbolic",
+    "ode",
+    "polynomial_roots"
+  ]
+}

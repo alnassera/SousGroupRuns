@@ -33,6 +33,7 @@ all_summaries.csv
 | Run | Path | Scope |
 | --- | --- | --- |
 | Bank-weight tune, 8 presets | `hardmath/bank_weight_tune30_ml9_fullselector_h200_threadcap_mem70_seqs2_20260504_021842/` | 30Q selector sweep, clean selector from `HARDMath/data/HARDMath.json`, winner `hygiene_heavy_p1p5_m2p5_c2_comp1` at 8/30. |
+| Bank-weight final, winning preset | `hardmath/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010/` | 300Q final eval on first 300 HARDMath mini examples, clean selector from `HARDMath/data/HARDMath.json`, 106/300 correct. |
 
 ## Notes
 
