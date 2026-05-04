@@ -1,0 +1,14 @@
+{
+  "remote_tune_root": "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_tune30_ml9_fullselector_h200_threadcap_mem70_seqs2_20260504_021842",
+  "final_300q_root_started": "/workspace/qwen3_moe_math_copy/results/raw/bank_weight_full300_ml9_hygiene_heavy_p1p5_m2p5_c2_comp1_h200_threadcap_mem70_seqs2_20260504_071010",
+  "selector_path": "/workspace/qwen3_moe_math_copy/HARDMath/data/HARDMath.json",
+  "tune_dataset_path": "/workspace/qwen3_moe_math_copy/data/random_hardmath_mini_30_seed11.json",
+  "eval_dataset_path": "/workspace/qwen3_moe_math_copy/HARDMath/evaluation/data/HARDMath_mini.json",
+  "max_examples": 30,
+  "max_layers_list": 9,
+  "batch_size": 2,
+  "max_num_seqs": 2,
+  "gpu_memory_utilization": 0.70,
+  "async_scheduling": false,
+  "enforce_eager": false
+}
